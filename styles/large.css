@@ -1,0 +1,34 @@
+@media (min-width: 750px) {
+
+    
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #hamburger-button {
+        display: none;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .course-work {
+        grid-column: 1 / span 2;
+    }
+
+    .jarabacoa-dr {
+        grid-column: 3 / span 1;
+    }
+
+    .web-certificates {
+        grid-column: 1 / span 3;
+    }
+
+    .course-button {
+        width: calc(33.333% - 20px);
+    }
+}

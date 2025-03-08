@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 - Web Frontend Development 1 By Reiquel Y. Carela">
+    <meta name="author" content="Reiquel Y. Carela">
+    <title>WDD 231: Web Frontend Development 1 - Reiquel Y. Carela</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 768px)">
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <img src="images/my-picture.webp" alt="Reiquel Y. Carela">
+            <h1>Reiquel Y. Carela</h1>
+            <button id="hamburger-button">☰</button>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">GitHub profile</a></li>
+            <li><a href="#">LinkedIn</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <div class="content">
+            <section class="course-work">
+                <h2>Course Work</h2>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </section>
+            <section class="jarabacoa-dr">
+                <h2>Jarabacoa, Dominican Republic</h2>
+                <img id="h-pine" src="images/hispaniola-pine.webp" alt="Hispaniola pine">
+                <p>Hispaniola pine</p>
+            </section>
+            <section class="web-certificates">
+                <h2>Web and Computer Programming Certificates</h2>
+                <div id="filters">
+                    <button id="all-courses">All Courses</button>
+                    <button id="wdd-courses">WDD Courses</button>
+                    <button id="cse-courses">CSE Courses</button>
+					<div id="course-group"></div>
+                    <p id="credit-count"></p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Reiquel Y. Carela | Dominican Republic</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

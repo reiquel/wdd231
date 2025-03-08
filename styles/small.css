@@ -1,0 +1,240 @@
+:root {
+  --primary-color: rgb(5, 78, 107);
+  --secondayr-color:#7a0412;
+  --text-color: white;
+  --background-color: #fff;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fira-code {
+  font-family: "Fira Code", monospace;
+  font-weight: 400 ;
+  font-style: normal;
+}
+
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+}
+
+
+.hero {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 25px;
+  text-align: center;
+}
+
+.hero-content{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.hero-content img {
+  width: 80px;
+  height: 60px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  background-color: black;
+  padding: 13px;
+
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+nav ul.active {
+  display:block;
+}
+
+nav ul li {
+  margin: 4px 0;
+}
+
+nav ul  li a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: larger;
+  text-align: center;
+  display: block;
+  padding: 4px;
+}
+
+nav ul li a:hover {
+  background-color: rgb(5, 78, 107);
+
+}
+
+#hamburger-button {
+  display: block;
+  position: absolute;
+  top: 48px;
+  right: 25px;
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 25px;
+  cursor:pointer;
+}
+
+main {
+  padding: 25px;
+}
+
+h1 {
+  text-align: left;
+}
+
+h1, h2 {
+  font-family: "Fira Code", monospace;
+}
+
+h2 {
+  color: black;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.course-work {
+  flex: 2;
+  text-align: center;
+  background: rgb(228, 227, 227);
+}
+
+.jarabacoa-dr {
+  flex: 1;
+  text-align: center;
+  background: rgb(228, 227, 227);
+}
+
+.jarabacoa-dr img {
+  max-width: 80%;
+  height: auto;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.web-certificates {
+  flex: 100%;
+  text-align: center;
+  background: rgb(228, 227, 227);
+}
+
+.course-work h2, .jarabacoa-dr h2, .web-certificates h2 {
+  position: relative;
+  color: white;
+  padding: 0.5rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  z-index: 1;
+}
+
+.course-work h2:after, .jarabacoa-dr h2:after, .web-certificates h2:after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -0px;
+  width: calc(100%);
+  height: 130%;
+  background-color: var(--primary-color);
+  z-index: -1;
+}
+
+
+#filters {
+  margin-bottom: 20px;
+}
+
+#filters button {
+  margin-right: 8px;
+  padding:  10px 20px;
+  background-color: var(--text-color);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+#filters button:hover {
+  background-color: var(--secondayr-color);
+  color: var(--text-color);
+}
+
+.course-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 80%;
+}
+
+#all-courses, #wdd-courses, #cse-courses {
+margin-bottom: 15px;
+
+}
+.course-cta {
+  background-color: var(--background-color);
+  padding: 8px;
+  border:  1px solid var(--text-color);
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: left;
+  width: 80%;
+  transition: var(--background-color) 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.course-cta.completed {
+  background-color: #e0f7fa;
+}
+
+.course-cta:hover {
+  background-color: #f0f0f0;
+}
+
+.course-description {
+  display: none;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+}
+
+.course-description.active {
+  display: block;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 8px;
+}
