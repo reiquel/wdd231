@@ -5,21 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="WDD 231 - Web Frontend Development 1 By Reiquel Y. Carela">
     <meta name="author" content="Reiquel Y. Carela">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://reiquel.github.io/wdd231/" />
+    <meta property="og:title" content="WDD 231: Web Frontend Development 1" />
+    <meta property="og:description" content="Explore my journey in web frontend development with projects, quizzes and more!" />
+    <meta property="og:image" content="https://reiquel.github.io/wdd231/images/my-picture.webp" />
+
     <title>WDD 231: Web Frontend Development 1 - Reiquel Y. Carela</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- css -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css" media="(min-width: 768px)">
+
+    <!-- Javascript -->
     <script src="scripts/course.js" defer></script>
 </head>
 <body>
     <header class="hero">
         <div class="hero-content">
-            <img src="images/my-picture.webp" alt="Reiquel Y. Carela">
+            <img src="images/my-picture.webp" alt="Reiquel Y. Carela" loading="lazy">
             <span class="my-name">Reiquel Y. Carela</span>
-            <button id="hamburger-button">☰</button>
+            <button id="hamburger-button" aria-label="Toggle navigation menu">☰</button>
         </div>
     </header>
     <nav>
@@ -46,7 +63,7 @@
             </section>
             <section class="jarabacoa-dr">
                 <h2>Jarabacoa, Dominican Republic</h2>
-                <img id="h-pine" src="images/hispaniola-pine.webp" alt="Hispaniola pine">
+                <img id="h-pine" src="images/hispaniola-pine.webp" alt="Hispaniola pine" loading="lazy">
                 <p>Hispaniola pine</p>
             </section>
             <section class="web-certificates">
