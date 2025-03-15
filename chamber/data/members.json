@@ -1,0 +1,68 @@
+{
+    "data": [
+        {
+            "name": "EcoResort Punta Cana",
+            "address": "Av. Alemania, Punta Cana, Dominican Republic",
+            "phone": "+1 809-555-1234",
+            "website": "https://www.ecoresortpc.com",
+            "image": "../images/eco-resort.webp",
+            "membership_level": 3,
+            "description": "A luxurious eco-friendly resort focused on sustainability and renewable energy."
+          },
+
+          {
+            "name": "Rancho Baiguate",
+            "address": "Carretera Jarabacoa-Manabao Km 4, Jarabacoa 41000, Dominican Republic",
+            "phone": "+1 809-574-6890",
+            "website": "https://www.ranchobaiguate.com",
+            "image": "../images/villa-serena.webp",
+            "membership_level": 2,
+            "description": "Eco-tourism resort offering adventure activities and promoting environmental conservation."
+          },
+          {
+            "name": "Eco del Mar",
+            "address": "Bahía de las Águilas, Pedernales, Dominican Republic",
+            "phone": "+1 809-710-8157",
+            "website": "https://www.ecodelmar.com.do/",
+            "image": "../images/eco-del-mar.webp",
+            "membership_level": 2,
+            "description": "Eco-friendly beachfront accommodation promoting sustainable tourism."
+          },
+          {
+            "name": "Villa Serena Hotel",
+            "address": "Calle La Punta 1, Las Galeras 32000, Dominican Republic",
+            "phone": "+1 809-538-0000",
+            "website": " https://www.villaserena.com/",
+            "image": "../images/villa-serena.webp",
+            "membership_level": 2,
+            "description": "Boutique hotel committed to sustainable tourism practices."
+          },
+          {
+            "name": "Casa Bonita Tropical Lodge",
+            "address": "Carretera de la Costa Km 17, Barahona 81000, Dominican Republic",
+            "phone": "+1 809-540-5750",
+            "website": "https://www.casabonitadr.com/",
+            "image": "../images/eco-resort.webp",
+            "membership_level": 3,
+            "description": "Eco-friendly lodge offering sustainable tourism experiences in the Dominican Republic."
+          },
+          {
+            "name": "Mi Tierra Verde",
+            "address": "Santo Domingo, Dominican Republic",
+            "phone": "+1 809-596-3736",
+            "website": "https://mitierraverde.com/",
+            "image": "../images/eco-del-mar.webp",
+            "membership_level": 3,
+            "description": "A destination management company focusing on eco-conscious and socially responsible events and travel experiences."
+          },
+          {
+            "name": "ZEL Punta Cana",
+            "address": "Punta Cana, Dominican Republic",
+            "phone": "+1 809-221-1290",
+            "website": "https://www.zelhotels.com/",
+            "image": "../images/eco-del-mar.webp",
+            "membership_level": 3,
+            "description": "A collaboration between Rafael Nadal and Meliá Hotels International, offering a Mediterranean lifestyle expe"
+          }
+    ]
+}
