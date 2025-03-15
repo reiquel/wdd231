@@ -140,22 +140,25 @@ nav.open {
 
 #resort-display.list {
     display: flex;
-    flex-direction:row;
+    flex-direction: column;
 }
 
 #resort-display.list section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
     margin: 0;
     padding: 0.25rem;
     align-items: center;
 }
 
 #resort-display.list section > * {
-    margin: 0 0.4rem;
+    margin: 0 1rem;
 }
+#resort-display.list section .resort-details{
+    display: flex;
+    flex-direction: row;
 
+}
 #resort-description {
     display: none;
 }
@@ -168,11 +171,6 @@ font-size: 0.9rem;
 font-family:"Playfair Display", serif;
 }
 
-#resort-display.list section .resort-details {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
 #resort-display.list section:nth-child(even) {
     background-color: #bed;
 }
