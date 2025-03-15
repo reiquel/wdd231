@@ -12,6 +12,7 @@ async function getData() {
     const resortImage = document.createElement('img');
     resortImage.src = resort.image;
     resortImage.alt = resort.name;
+    resortImage.loading = "lazy";
     
     const resortDetails = document.createElement('div');
     resortDetails.classList.add('resort-details');
