@@ -17,12 +17,11 @@ async function getData() {
     resortDetails.classList.add('resort-details');
     resortDetails.innerHTML=`
     <h3>${resort.name}</h3>
-    <div class=inline-info>
     <p id='resort-description'>${resort.description}</p>
     <p><strong>Address:</strong>${resort.address}</p>
     <p><strong>Phone:</strong>${resort.phone}</p>
-    <a href="${resort.website}" target="_blank" class=:"website" >Visit Website</a>
-    </div>
+    <a href="${resort.website}" target="_blank">Visit Website</a>
+
     `;
     
     resortSection.append(resortImage, resortDetails);

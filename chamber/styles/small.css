@@ -167,14 +167,6 @@ font-size: 1.3rem;
 font-family:"Playfair Display", serif;
 }
 
-#resort-display.list section .inline-info {
-    display: flex;
-    align-items: center;
-}
-#resort-display.list section .inline-info p,
-#resort-display.list section .inline-info p {
-    margin: 5px;
-} 
 #resort-display.list section:nth-child(even) {
     background-color: #bed;
 }
