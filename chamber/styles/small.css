@@ -29,7 +29,7 @@ body {
 h1, h2, nav ul li a {
         font-family: "Playfair Display", serif;
     }
-    
+
 h1 {
     text-align: center;
 }
@@ -156,7 +156,7 @@ nav.open {
     margin: 0 1rem;
 }
 
-#resort-description {
+#resort-display.list section #resort-description {
     display: none;
 }
 #resort-display.list section img {
