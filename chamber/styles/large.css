@@ -15,4 +15,11 @@
     nav {
     grid-template-rows: 1fr; 
     }
+
+    #resort-display {
+
+        display: grid;
+        grid-template-columns: repeat(3, minmax(210px,1fr));
+        gap: 1rem;
+    }
     }

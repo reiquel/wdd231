@@ -39,18 +39,19 @@ h1, h2, nav ul li a {
     }
 .hero-content {
     display: grid;
-    grid-template-columns: 180px auto 20px;
+    grid-template-columns: 100px auto 20px;
 }
 .hero-content img {
-    max-width: 150px;
+    max-width: 80px;
     margin-bottom: 10px;
+    box-shadow: 0px 4px 8px rgba(2, 43, 49, 0.3);
 }
 
 .hero-content .company-name {
     text-align: left;
-    margin-top: 50px;
+    margin-top: 15px;
     font-family: "Playfair Display", serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--primary-color)
 }
 nav {
@@ -64,7 +65,7 @@ nav {
     }
     
 #hamburger-button {
-    margin-top: -80px;
+    margin-top: -60px;
     margin-left: -6px;
     font-size: 2rem;
     background: none;
@@ -133,13 +134,37 @@ nav.open {
 
 #resort-display {
     display: grid;
-    grid-template-columns: repeat(3, minmax(210px,1fr));
+    grid-template-columns: repeat(2, minmax(110px,1fr));
     gap: 1rem;
 }
 
 #resort-display.list {
     display: flex;
     flex-direction: column;
+}
+
+#resort-display.list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 0;
+    padding: 0.25rem;
+    align-items: center;
+}
+
+#resort-display.list section > * {
+    margin: 0 1rem;
+}
+#resort-display.list section img {
+    display: none;
+}
+
+#resort-display.list section h3 {
+font-size: 0.9rem;
+font-family:"Playfair Display", serif;
+}
+
+#resort-display.list section:nth-child(even) {
+    background-color: #bed;
 }
 
 #resort-display section {
@@ -152,7 +177,7 @@ nav.open {
 }
 
 #resort-display img {
-    width: 50%;
+    width: 80%;
     height: auto;
     border-radius: 6px;
     margin-bottom: 1rem;
