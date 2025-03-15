@@ -29,7 +29,10 @@ body {
 h1, h2, nav ul li a {
         font-family: "Playfair Display", serif;
     }
-
+    
+h1 {
+    text-align: center;
+}
 .hero {
     background-color: var(--secondayr-color);
     padding: 1rem;
@@ -180,6 +183,7 @@ font-family:"Playfair Display", serif;
 
 #resort-display img {
     width: 80%;
+    max-width: 300px;
     height: auto;
     border-radius: 6px;
     margin-bottom: 1rem;
