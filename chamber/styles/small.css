@@ -64,6 +64,8 @@ nav {
     }
     
 #hamburger-button {
+    margin-top: -80px;
+    margin-left: -6px;
     font-size: 2rem;
     background: none;
     border: none;
@@ -82,18 +84,21 @@ ul.menuLinks li a {
     list-style-type: none;
     }
 
-ul.menuLinks li:not(:last-child) {
-    border-right: 1px solid var(--text-color);
-}
     
 ul.menuLinks li {
-    
     list-style-type: none;
+    text-align: center;
     }
 
+ul li a:hover {
+        background-color: #f5caa5;
+        }
+
 li.active {
-    background-color: #F7FFF7;
-    }
+        
+        border:  3px solid rgba(0, 0, 0, 0.1);
+        
+        }
     
 #hamburger-button.open::before {
     content:'x';
@@ -147,7 +152,7 @@ nav.open {
 }
 
 #resort-display img {
-    width: 100%;
+    width: 50%;
     height: auto;
     border-radius: 6px;
     margin-bottom: 1rem;
