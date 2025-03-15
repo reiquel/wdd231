@@ -154,7 +154,7 @@ nav.open {
 #resort-display.list section > * {
     margin: 0 1rem;
 }
-#resort-display.list section .resort-details{
+.resort-details{
     display: flex;
     flex-direction: row;
 
