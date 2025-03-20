@@ -20,7 +20,7 @@ showFooter()
 async function getWeatherForecast() {
 
     const apiKey = '635f3a0057194cd58e3cf90f3df44bb7';
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=Dominican%20Republic&appid=${apiKey}&units=imperial`;
+    const url = `https://api.openweathermap.org/data/2.5/forecast?q=Dominican%20Republic&appid=${apiKey}&units=imperial`;
 
     try {
         const response = await fetch(url);
@@ -29,14 +29,14 @@ async function getWeatherForecast() {
         const data = await response.json();
         
 
-        const forcast = data.list.filter((item, index) => index % 8 === 0).slice(0,3);
+        const forecast = data.list.filter((item, index) => index % 8 === 0).slice(0,3);
 
         const main = document.querySelector('main');
         const weatherSection = document.createElement('section');
-        weatherSection.classList.add('weather-forcast');
-        weatherSection.innerHTML = `<h2> 3-day Weather Forcast</h2>`;
+        weatherSection.classList.add('weather-forecast');
+        weatherSection.innerHTML = `<h2> 3-day Weather Forecast</h2>`;
 
-        forcast.forEach((data, i) => {
+        forecast.forEach((day, i) => {
             const weatherCard = document.createElement('div');
             weatherCard.classList.add('weather-card');
 
@@ -44,8 +44,8 @@ async function getWeatherForecast() {
 
             weatherCard.innerHTML = `
             <h3>${date}</h3>
-            <img src=http://openweathermap.org/img/w/${day.weather[0].icon}.png" alt="${day.weather[0].description}">
-            <p>Temperature: ${day.main.temp}°C</p>
+            <img src="http://openweathermap.org/img/w/${day.weather[0].icon}.png" alt="${day.weather[0].description}">
+            <p>Temperature: ${day.main.temp}°F</p>
             <p>Conditions: ${day.weather[0].description}</p>
             `;
 
