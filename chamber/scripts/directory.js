@@ -121,5 +121,3 @@ document.addEventListener('DOMContentLoaded', () => {
     loadCompanySpotlight();
     showFooter();
 });
-
-window.addEventListener('resize', loadCompanySpotlight);
