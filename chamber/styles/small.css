@@ -478,6 +478,22 @@ font-family:"Playfair Display", serif;
         z-index: -1;
       }
 }
+.social-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    justify-content: center;
+}
+
+.icon-youtube img, .icon-twitter img, .icon-linkedin img {
+    width: 50px;
+    height: 50px;
+}
+
+.social-icons a:hover img {
+   background-color: #ffffff;
+   border: none;
+}
 
 footer {
     background-color: var(--secondayr-color);
