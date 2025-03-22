@@ -54,9 +54,17 @@
     .company-spotlight {
         grid-column: 1 /-1;
         grid-row: 3;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
+
+    }
+
+    #spotlight {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .spotlight-card {
+        flex: 1 1 calc(33.33% - 20px);
+        max-width: 30%;
     }
 
     .forecast {
