@@ -57,10 +57,6 @@
 
     }
 
-    #spotlight {
-        flex-direction: row;
-        justify-content: space-between;
-    }
 
     .forecast {
         display: grid;
