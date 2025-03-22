@@ -366,11 +366,10 @@ font-family:"Playfair Display", serif;
     border-radius: 8px;
     flex: 1;
     min-width: 45%;
-    max-width: 48%;
 }
 
 .company-spotlight img {
-    width: 100%;
+    width: 50%;
     max-width: 300px;
     height: auto;
     border-radius: 8px;
@@ -407,7 +406,7 @@ font-family:"Playfair Display", serif;
 .company-info {
     display: flex;
     flex-direction: column;
-    text-align: right;
+    text-align: center;
     flex: 1;
 }
 .company-info .tagline {
