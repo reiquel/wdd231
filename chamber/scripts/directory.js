@@ -84,9 +84,12 @@ async function loadCompanySpotlight() {
     const jsonData = await response.json();
     const members = jsonData.data;
 
+    const isLargeview = window.matchMedia('min-width: 768px').matches;
+    const numberOfCompanies = isLargeview ? 3 : 2;
+
     const eligibleMembers = members.filter(member => member.membership_level === 2 || member.membership_level === 3);
 
-    const selectedMembers = eligibleMembers.sort(() => 0.5 - Math.random()).slice(0, 3);
+    const selectedMembers = eligibleMembers.sort(() => 0.5 - Math.random()).slice(0, numberOfCompanies);
 
     const spotlightContainer = document.querySelector('.company-spotlights');
 
@@ -94,9 +97,10 @@ async function loadCompanySpotlight() {
         const section = document.createElement('section');
         section.className = 'company-spotlight';
         section.innerHTML = `
-            <img src="${member.image}" alt="${member.name}" loading="lazy">
             <div class="company-info">
                 <h3>${member.name}</h3>
+                <hr class="company-divider">
+                <img src="${member.image}" alt="${member.name}" loading="lazy" width="300" height="200">
                 <p class="tagline">${member.tagline || 'Quality Service Guaranteed'}</p>
                 <p><strong>Email:</strong> ${member.email}</p>
                 <p><strong>phone:</strong> ${member.phone}</p>
@@ -107,6 +111,8 @@ async function loadCompanySpotlight() {
     });
 
 }
+
+window.addEventListener('resize', loadCompanySpotlight);
 
 document.addEventListener('DOMContentLoaded', () => {
     getCurrentWeather();

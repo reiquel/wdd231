@@ -129,8 +129,7 @@
     .company-spotlight {
         flex: 1;
         min-width: 0;
-        
-      
+        max-width: none;  
     }
 
     .forecast h2 {
