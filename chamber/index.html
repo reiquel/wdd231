@@ -9,7 +9,7 @@
 <!-- Open Graph Meta Tags -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://reiquel.github.io/wdd231/chamber/index.html" />
-<meta property="og:title" content="Chamber of Commerce Directory " />
+<meta property="og:title" content="Chamber of Commerce Home Page " />
 <meta property="og:description" content="This website is a gateway to discovering the Sahara Oasis Region" />
 <meta property="og:image" content="https://reiquel.github.io/wdd231/chamber/images/logo.webp" />
 
@@ -47,11 +47,39 @@
 <li><a href="#">Join</a></li>
 </ul>
 </nav>
-<main>
+<main>    
 <div class="info-container">
-
+    <section class="hero-image">
+        <picture class="optipic">
+            <source media="(max-width: 766px)" srcset="images/punta-cana.webp">
+            <source media="(max-width: 1024px)" srcset="images/cabo-rojo.webp">
+            <img src="images/cabo-rojo.webp" alt="Lesson 06">
+        </picture>
+        <a href="#" id="call-to-action">Join the chamber</a>
+    </section>
+    <section class="events">
+        <h2>Upcoming Events</h2>
+        <div class="event-list">
+            <p>1. Business Networking Mixer - October 15, 2025</p>
+            <p>2. Entrepreneurship Workshop - November 5, 2025</p>
+            <p>3. Annual Gala Dinner - December 10, 2025</p>
+            <p>4. Tech Innovation Summit - January 20, 2026</p>
+            <p>5. Small Business Expo - February 15, 2026</p>
+        </div>
+    </section>
+    <section class="weather">
+        <h2>Current Weather</h2>
+        <div id="current-weather"></div>
+    </section>
+    <section class="forcast">
+        <h2>Weather Forcast</h2>
+        <div id="forcast"></div>
+    </section>
+    <section class="company-spotlight">
+        <h2>company Spotlight</h2>
+        <div id="spotlight"></div>
+    </section> 
 </div>
-
 </main>
 <footer>
 <p>&copy; <span id="currentyear"></span> Reiquel Y. Carela | Dominican Republic</p>

@@ -3,6 +3,8 @@
     --secondayr-color:#F4A460;
     --text-color: #0a0808;
     --background-color: #F7FFF7;
+    --card-background: #ffffff;
+    --card-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
   }
 
 
@@ -210,6 +212,59 @@ font-family:"Playfair Display", serif;
 
 .resort-details a {
     text-decoration: underline;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: #0a0808;
+}
+
+#call-to-action {
+    display: inline;
+    margin-top: 1rem;
+    padding: 0.73rem 1.4rem;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+#call-to-action:hover{
+    background-color: var(--secondayr-color);
+    color: var(--text-color);
+}
+
+.events, .weather, .forecast, .company-spotlight {
+    background-color: var(--card-background);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: #0a0808;
+}
+
+.events h2, .weather h2, .forecast h2, .company-spotlight h2 {
+    margin-bottom: 1rem;
+}
+
+.event-list p {
+    margin: 0.5rem 0;
+}
+
+.weather-card, .forecast-card, .spotlight-card {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.weather-card img, .forecast-card img, .spotlight-card img {
+    width: 50px;
+    height: 50px;
 }
 
 footer {
