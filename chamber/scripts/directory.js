@@ -112,7 +112,6 @@ async function loadCompanySpotlight() {
 
 }
 
-window.addEventListener('resize', loadCompanySpotlight);
 
 document.addEventListener('DOMContentLoaded', () => {
     getCurrentWeather();
