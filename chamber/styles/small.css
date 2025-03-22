@@ -293,8 +293,8 @@ font-family:"Playfair Display", serif;
     content: "";
     position: absolute;
     top: -38px;
-    left: -10px;
-    width: calc(105%);
+    left: -16px;
+    width: calc(109%);
     height: 180%;
     background-color: var(--secondayr-color);
     z-index: -1;
@@ -304,8 +304,8 @@ font-family:"Playfair Display", serif;
     content: "";
     position: absolute;
     top: -38px;
-    left: -5px;
-    width: calc(105%);
+    left: -17px;
+    width: calc(109%);
     height: 180%;
     background-color: var(--secondayr-color);
     z-index: -1;
@@ -315,9 +315,9 @@ font-family:"Playfair Display", serif;
     content: "";
     position: absolute;
     top: -38px;
-    left: -15px;
-    width: calc(104%);
-    height: 180%;
+    left: -16px;
+    width: calc(109%);
+    height:180%;
     background-color: var(--secondayr-color);
     z-index: -1;
   }
@@ -349,10 +349,7 @@ font-family:"Playfair Display", serif;
     height: 50px;
 }
 
-.forecast h2 {
-    text-align: center;
-    margin-bottom: 1rem;
-}
+
 
 .company-spotlights {
     display: flex;
@@ -412,6 +409,74 @@ font-family:"Playfair Display", serif;
 
 .spotlight-card a:hover {
     background-color: #bed;
+}
+
+@media (min-width: 440px) and (max-width: 767px) {
+    .events h2 {
+        position: relative;
+        color: black;
+        padding: 0.5rem 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5rem;
+        z-index: 1;
+    }
+    
+    .weather h2 {
+        position: relative;
+        color: black;
+        padding: 0.5rem 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5rem;
+        z-index: 1;
+    }
+    
+    .forecast h2 {
+        position: relative;
+        color: black;
+        padding: 0.5rem 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.3rem;
+        z-index: 1;
+    }
+    
+    .events h2:after {
+        content: "";
+        position: absolute;
+        top: -38px;
+        left: -16px;
+        width: calc(105%);
+        height: 180%;
+        background-color: var(--secondayr-color);
+        z-index: -1;
+      }
+    
+      .weather h2:after {
+        content: "";
+        position: absolute;
+        top: -38px;
+        left: -17px;
+        width: calc(105%);
+        height: 180%;
+        background-color: var(--secondayr-color);
+        z-index: -1;
+      }
+    
+      .forecast h2:after {
+        content: "";
+        position: absolute;
+        top: -38px;
+        left: -16px;
+        width: calc(105%);
+        height:180%;
+        background-color: var(--secondayr-color);
+        z-index: -1;
+      }
 }
 
 footer {
