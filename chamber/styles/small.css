@@ -365,12 +365,13 @@ font-family:"Playfair Display", serif;
     padding: 1rem;
     border-radius: 8px;
     flex: 1;
-    min-width: 45%;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .company-spotlight img {
-    width: 50%;
-    max-width: 300px;
+    width: 100%;
     height: auto;
     border-radius: 8px;
     margin: 0.5rem auto;
