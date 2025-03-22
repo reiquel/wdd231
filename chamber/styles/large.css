@@ -31,7 +31,7 @@
         padding: 1rem;
     }
 
-    .hero-img {
+    .hero-image {
         grid-column: 1/ -1;
         grid-row: 1;
     }

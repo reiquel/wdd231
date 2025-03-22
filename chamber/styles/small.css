@@ -57,7 +57,7 @@ h1 {
     margin-top: 10px;
     font-family: "Playfair Display", serif;
     font-size: 1.5rem;
-    color: var(--primary-color)
+    color: var(--primary-color);
 }
 nav {
     background-color: var(--secondayr-color);
@@ -224,7 +224,7 @@ font-family:"Playfair Display", serif;
 .hero-image img {
     width: 100%;
     border-radius: 8px;
-    box-shadow: #0a0808;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #call-to-action {

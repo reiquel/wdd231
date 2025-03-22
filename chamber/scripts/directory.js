@@ -18,7 +18,7 @@ function showFooter() {
 async function getCurrentWeather() {
 
     const apiKey = '635f3a0057194cd58e3cf90f3df44bb7';
-    const url = `https://api.openweathermap.org/data/2.5/weathert?q=Dominican%20Republic&appid=${apiKey}&units=imperial`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=Dominican%20Republic&appid=${apiKey}&units=imperial`;
 
     try {
         const response = await fetch(url);
