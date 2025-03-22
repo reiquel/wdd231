@@ -127,7 +127,7 @@
     }
 
     .company-spotlight {
-        flex: 1 1 calc(33.33% 1rem);  
+        flex: 1 1 calc(33.33% - 1rem);  
     }
 
     .forecast h2 {
