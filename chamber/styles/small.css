@@ -256,7 +256,7 @@ font-family:"Playfair Display", serif;
     color: var(--text-color);
 }
 
-.events h2, .weather h2, .forecast h2 {
+.events h2 {
     position: relative;
     color: black;
     padding: 0.5rem 0.5rem;
@@ -267,7 +267,51 @@ font-family:"Playfair Display", serif;
     z-index: 1;
 }
 
-.events h2:after, .weather h2:after, .forecast h2:after {
+.weather h2 {
+    position: relative;
+    color: black;
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    z-index: 1;
+}
+
+.forecast h2 {
+    position: relative;
+    color: black;
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.3rem;
+    z-index: 1;
+}
+
+.events h2:after {
+    content: "";
+    position: absolute;
+    top: -38px;
+    left: -10px;
+    width: calc(105%);
+    height: 180%;
+    background-color: var(--secondayr-color);
+    z-index: -1;
+  }
+
+  .weather h2:after {
+    content: "";
+    position: absolute;
+    top: -38px;
+    left: -5px;
+    width: calc(105%);
+    height: 180%;
+    background-color: var(--secondayr-color);
+    z-index: -1;
+  }
+
+  .forecast h2:after {
     content: "";
     position: absolute;
     top: -38px;
