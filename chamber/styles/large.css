@@ -1,18 +1,4 @@
 @media only screen and (min-width: 768px) {
-    .theme-toggle.small-view {
-        display: none;
-    }
-    .theme-toggle.large-view {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-    }
-    .hero-content {
-        display: grid;
-        grid-template-columns: 100px auto 20px;
-        justify-content: flex-start;
-    }
     #hamburger-button {
     display: none; 
     }
@@ -64,9 +50,6 @@
         grid-row: 2;
 
     }
-    .forecast h2 {
-        text-align: center;
-    }
 
     .company-spotlight {
         grid-column: 1 /-1;
@@ -77,11 +60,6 @@
     #spotlight {
         flex-direction: row;
         justify-content: space-between;
-    }
-
-    .spotlight-card {
-        flex: 1 1 calc(33.33% - 20px);
-        max-width: 30%;
     }
 
     .forecast {
