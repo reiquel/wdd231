@@ -62,10 +62,7 @@ async function getWeatherForecast() {
             const date = new Date(day.dt_txt).toLocaleString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
             return `
                 <div class="forecast-card">
-                    <h3>${date}</h3>
-                    <img src="http://openweathermap.org/img/w/${day.weather[0].icon}.png" alt="${day.weather[0].description}">
-                    <p>Temperature: ${day.main.temp}°F</p>
-                    <p>Conditions: ${day.weather[0].description}</p>
+                    <p>${date}: ${day.main.temp}°F</p>
                 </div>
             `;
         }).join('');

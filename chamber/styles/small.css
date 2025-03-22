@@ -31,11 +31,19 @@ body {
 h1, h2, nav ul li a {
         font-family: "Playfair Display", serif;
     }
-
+h2 {
+    text-align: center;
+}
 h1 {
     text-align: center;
     font-size:21px;
     margin-top: 20px;
+}
+
+#home {
+    text-align: left;
+    margin-left: 20px;
+    font-size: xx-large;
 }
 .hero {
     background-color: var(--secondayr-color);
@@ -242,6 +250,28 @@ font-family:"Playfair Display", serif;
     color: var(--text-color);
 }
 
+.events h2, .weather h2, .forecast h2 {
+    position: relative;
+    color: black;
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    z-index: 1;
+}
+
+.events h2:after, .weather h2:after, .forecast h2:after {
+    content: "";
+    position: absolute;
+    top: -38px;
+    left: -15px;
+    width: calc(104%);
+    height: 180%;
+    background-color: var(--secondayr-color);
+    z-index: -1;
+  }
+
 .events, .weather, .forecast, .company-spotlight {
     background-color: var(--card-background);
     padding: 1rem;
@@ -254,6 +284,7 @@ font-family:"Playfair Display", serif;
     margin-bottom: 1rem;
 }
 
+
 .event-list p {
     margin: 0.5rem 0;
 }
@@ -263,7 +294,7 @@ font-family:"Playfair Display", serif;
     margin: 1rem 0;
 }
 
-.weather-card img, .forecast-card img{
+.weather-card img {
     width: 50px;
     height: 50px;
 }
@@ -283,8 +314,8 @@ font-family:"Playfair Display", serif;
 }
 
 .spotlight-card h3{
-    font-size: 1.2rem;
-    margin: 10px 0;
+    font-size: 0.3rem;
+    margin: 2px 0;
 }
 
 .spotlight-card p {

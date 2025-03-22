@@ -63,4 +63,14 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
     }
+
+    .forecast h2 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .events h2, .weather h2, .forecast h2, .company-spotlight h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
 }
