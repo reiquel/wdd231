@@ -29,7 +29,7 @@ async function getCurrentWeather() {
 
         currentWeatherSection.innerHTML = `
         <div class="weather-card">
-        <img src="http://openweathermap.org/img/w/${data.weather[0].icon}.png" alt="${data.weather[0].description}">
+        <img src="https://openweathermap.org/img/w/${data.weather[0].icon}.png" alt="${data.weather[0].description}">
                 <p>Temperature: ${data.main.temp}°F</p>
                 <p>Conditions: ${data.weather[0].description}</p>
                 <p>Humidity: ${data.main.humidity}%</p>
