@@ -71,7 +71,7 @@ h1 {
 nav {
     background-color: var(--secondayr-color);
     color: var(--primary-color);
-    margin-top: -50px;
+    margin-top: -20px;
     }
     
 #hamburger-button::before {
