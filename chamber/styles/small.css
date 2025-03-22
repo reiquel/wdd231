@@ -1,4 +1,3 @@
-/* small.css */
 :root {
     --primary-color: #022b31;
     --secondayr-color:#F4A460;
@@ -6,35 +5,35 @@
     --background-color: #F7FFF7;
     --card-background: #ffffff;
     --card-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
-}
+  }
 
-.roboto {
+
+  .roboto {
     font-family: "Roboto", sans-serif;
     font-weight:400 ;
     font-style: normal;
-}
+  }
 
-.playfair-display {
+  .playfair-display {
     font-family: "Playfair Display", serif;
     font-weight: 400;
     font-style: normal;
-}
+  }
 
 body {
     font-family: "Roboto", sans-serif;
     background-color:var(--background-color);
     margin: 0;
     padding: 0;
-}
 
+    }
+    
 h1, h2, nav ul li a {
-    font-family: "Playfair Display", serif;
-}
-
+        font-family: "Playfair Display", serif;
+    }
 h2 {
     text-align: center;
 }
-
 h1 {
     text-align: center;
     font-size:21px;
@@ -46,18 +45,15 @@ h1 {
     margin-left: 20px;
     font-size: xx-large;
 }
-
 .hero {
     background-color: var(--secondayr-color);
     padding: 1rem;
     text-align: center;
-}
-
+    }
 .hero-content {
     display: grid;
     grid-template-columns: 100px auto 20px;
 }
-
 .hero-content img {
     max-width: 80px;
     margin-bottom: 10px;
@@ -71,17 +67,16 @@ h1 {
     font-size: 1.5rem;
     color: var(--primary-color);
 }
-
 nav {
     background-color: var(--secondayr-color);
     color: var(--primary-color);
     margin-top: -50px;
-}
-
+    }
+    
 #hamburger-button::before {
     content:"☰";
-}
-
+    }
+    
 #hamburger-button {
     margin-top: -60px;
     margin-left: -6px;
@@ -91,9 +86,10 @@ nav {
     color: var(--text-color);
     cursor: pointer;
     width: 50%;
-}
-
+    }
+    
 ul.menuLinks li a {
+    
     display: block;
     text-align: center;
     padding: .75rem 2vw;
@@ -102,38 +98,42 @@ ul.menuLinks li a {
     list-style-type: none;
     font-size: large;
     font-weight: 500;
-}
+    }
 
+    
 ul.menuLinks li {
     list-style-type: none;
     text-align: center;
-}
+    }
 
 ul li a:hover {
-    background-color: #f5caa5;
-}
+        background-color: #f5caa5;
+        }
 
 li.active {
-    border:  3px solid rgba(0, 0, 0, 0.1);
-}
-
+        
+        border:  3px solid rgba(0, 0, 0, 0.1);
+        
+        }
+    
 #hamburger-button.open::before {
     content:'x';
-}
-
+    
+    }
+    
 nav {
     display: grid;
     grid-template-rows: 0fr;
     transition: grid-template-rows 0.5s ease-out;
-}
-
+    }
+    
 nav ul{
     overflow: hidden;
-}
-
+    }
+    
 nav.open {
     grid-template-rows: 1fr;
-}
+    }
 
 .menu {
     margin: 1rem auto;
@@ -173,14 +173,13 @@ nav.open {
 #resort-display.list section #resort-description {
     display: none;
 }
-
 #resort-display.list section img {
     display: none;
 }
 
 #resort-display.list section h3 {
-    font-size: 1.3rem;
-    font-family:"Playfair Display", serif;
+font-size: 1.3rem;
+font-family:"Playfair Display", serif;
 }
 
 #resort-display.list section:nth-child(even) {
@@ -193,6 +192,7 @@ nav.open {
     background-color: #f9f9f9;
     text-align: center;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
 }
 
 #resort-display img {
@@ -202,6 +202,7 @@ nav.open {
     border-radius: 6px;
     margin-bottom: 1rem;
     box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.1);
+    
 }
 
 #resort-display h3 {
@@ -228,19 +229,21 @@ nav.open {
     padding: 1rem;
 }
 
+.hero-image {
+    position: relative;
+    width: 100%;
+}
+
 .hero-image img {
     width: 100%;
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.action-button-container {
-    text-align: right;
-    margin-top: 1rem;
-}
-
 #call-to-action {
-    display: inline-block;
+    display: absolute;
+    bottom: 20px;
+    right: 20px;
     padding: 0.73rem 1.4rem;
     background-color: var(--primary-color);
     color: var(--background-color);
@@ -273,7 +276,7 @@ nav.open {
     height: 180%;
     background-color: var(--secondayr-color);
     z-index: -1;
-}
+  }
 
 .events, .weather, .forecast, .company-spotlight {
     background-color: var(--card-background);
@@ -286,6 +289,7 @@ nav.open {
     text-align: center;
     margin-bottom: 1rem;
 }
+
 
 .event-list p {
     margin: 0.5rem 0;
@@ -301,28 +305,53 @@ nav.open {
     height: 50px;
 }
 
-#spotlight {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+.forecast h2 {
     text-align: center;
+    margin-bottom: 1rem;
 }
 
-.spotlight-card img{
-    width: 80%;
-    height: auto;
+.company-spotlights {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.company-spotlight {
+    background-color: var(--card-background);
+    padding: 1rem;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+}
+
+.company-spotlight img {
+    width: 100%;
     border-radius: 8px;
 }
 
-.spotlight-card h3{
-    font-size: 0.3rem;
-    margin: 2px 0;
+.company-info {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
 }
 
-.spotlight-card p {
-    font-size: 0.9rem;
-    color:  #555;
+.company-info h3 {
+    text-align: center;
+    margin: 0 0 0.5rem;
+    font-size: 1.3rem;
+    color: var(--primary-color);
+}
+
+.company-info .tagline {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.company-info p {
+    margin: 0.5rem 0;
 }
 
 .spotlight-card a {
@@ -333,6 +362,7 @@ nav.open {
     color: #0a0808;
     text-decoration: none;
     border-radius: 5px;
+
 }
 
 .spotlight-card a:hover {

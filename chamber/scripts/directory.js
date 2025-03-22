@@ -86,20 +86,25 @@ async function loadCompanySpotlight() {
 
     const eligibleMembers = members.filter(member => member.membership_level === 2 || member.membership_level === 3);
 
-    const selectedMembers = eligibleMembers.sort(() => 0.5 - Math.random()).slice(0, Math.floor(Math.random() *2) + 2);
+    const selectedMembers = eligibleMembers.sort(() => 0.5 - Math.random()).slice(0, 3);
 
-    const spotlightSection = document.getElementById('spotlight');
+    const spotlightContainer = document.querySelector('.company-spotlights');
 
-    spotlightSection.innerHTML = selectedMembers.map(member => `
-        <div class="spotlight-card">
-            <h3>${member.name}</h3>
+    selectedMembers.forEach(member => {
+        const section = document.createElement('section');
+        section.className = 'company-spotlight';
+        section.innerHTML = `
             <img src="${member.image}" alt="${member.name}" loading="lazy">
-            <p>${member.description}</p>
-            <p><strong>Address:</strong> ${member.address}</p>
-            <p><strong>Phone:</strong> ${member.phone}</p>
-            <a href="${member.website}" target="_blank">Visit Website</a>
-        </div>
-    `).join('');
+            <div class="company-info">
+                <h3>${member.name}</h3>
+                <p class="tagline">${member.tagline || 'Quality Service Guaranteed'}</p>
+                <p>${member.email}</p>
+                <p>${member.phone}</p>
+                <a href="${member.website}" target="_blank">Visit Website</a>
+            </div>
+        `;
+        spotlightContainer.appendChild(section);
+    });
 
 }
 
