@@ -353,7 +353,7 @@ font-family:"Playfair Display", serif;
 
 .company-spotlights {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: space-between;
@@ -375,14 +375,10 @@ font-family:"Playfair Display", serif;
     height: auto;
     border-radius: 8px;
     margin: 0.5rem auto;
-    display: block;
+    object-fit: cover;
 }
 
-.company-info {
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-}
+
 
 .company-info h3 {
     text-align: center;
@@ -401,6 +397,19 @@ font-family:"Playfair Display", serif;
     margin-right: auto;
 }
 
+.company-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.company-info {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    flex: 1;
+}
 .company-info .tagline {
     text-align: center;
     font-style: italic;

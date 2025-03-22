@@ -97,16 +97,18 @@ async function loadCompanySpotlight() {
         const section = document.createElement('section');
         section.className = 'company-spotlight';
         section.innerHTML = `
-            <div class="company-info">
                 <h3>${member.name}</h3>
                 <hr class="company-divider">
-                <img src="${member.image}" alt="${member.name}" loading="lazy" width="300" height="200">
-                <p class="tagline">${member.tagline || 'Quality Service Guaranteed'}</p>
-                <p><strong>Email:</strong> ${member.email}</p>
-                <p><strong>phone:</strong> ${member.phone}</p>
-                <a href="${member.website}" target="_blank">Visit Website</a>
-            </div>
-        `;
+                <div class="company-row">
+                    <img src="${member.image}" alt="${member.name}" loading="lazy" width="300" height="200">
+                    <div class="company-info">
+                        <p class="tagline">${member.tagline || 'Quality Service Guaranteed'}</p>
+                        <p><strong>Email:</strong> ${member.email}</p>
+                        <p><strong>phone:</strong> ${member.phone}</p>
+                        <a href="${member.website}" target="_blank">Visit Website</a>
+                    <div>
+                </div>
+                `;
         spotlightContainer.appendChild(section);
     });
 
