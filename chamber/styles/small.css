@@ -381,7 +381,7 @@ font-family:"Playfair Display", serif;
 
 
 .company-info h3 {
-    text-align: center;
+    text-align: right;
     margin: 0 0 0.5rem;
     font-size: 1.3rem;
     color: var(--primary-color);
