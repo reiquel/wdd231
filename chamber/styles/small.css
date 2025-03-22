@@ -390,7 +390,7 @@ font-family:"Playfair Display", serif;
     height: 2px;
     background-color: var(--primary-color);
     margin: 0.5rem 0;
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
