@@ -3,6 +3,7 @@
         {
             "name": "EcoResort Punta Cana",
             "address": "Av. Alemania, Punta Cana, Dominican Republic",
+            "email": "ecoresort@gmail.com",
             "phone": "+1 809-555-1234",
             "website": "https://www.ecoresortpc.com",
             "image": "images/eco-resort.webp",
@@ -13,6 +14,7 @@
           {
             "name": "Rancho Baiguate",
             "address": "Carretera Jarabacoa-Manabao Km 4, Jarabacoa 41000, Dominican Republic",
+            "email": "ranchobaiguate@gmail.com",
             "phone": "+1 809-574-6890",
             "website": "https://www.ranchobaiguate.com",
             "image": "images/rancho-baiguate.webp",
@@ -22,6 +24,7 @@
           {
             "name": "Eco del Mar",
             "address": "Bahía de las Águilas, Pedernales, Dominican Republic",
+            "email": "ecodelmar@gmail.com",
             "phone": "+1 809-710-8157",
             "website": "https://www.ecodelmar.com.do/",
             "image": "images/eco-del-mar.webp",
@@ -31,6 +34,7 @@
           {
             "name": "Villa Serena Hotel",
             "address": "Calle La Punta 1, Las Galeras 32000, Dominican Republic",
+            "email": "villaserenahotel@gmail.com",
             "phone": "+1 809-538-0000",
             "website": " https://www.villaserena.com/",
             "image": "images/villa-serana.webp",
@@ -40,6 +44,7 @@
           {
             "name": "Casa Bonita Tropical Lodge",
             "address": "Carretera de la Costa Km 17, Barahona 81000, Dominican Republic",
+            "email": "tropicallodge@gmail.com",
             "phone": "+1 809-540-5750",
             "website": "https://www.casabonitadr.com/",
             "image": "images/casa-bonita.webp",
@@ -49,6 +54,7 @@
           {
             "name": "Mi Tierra Verde",
             "address": "Santo Domingo, Dominican Republic",
+            "email": "tierraverde@gmail.com",
             "phone": "+1 809-596-3736",
             "website": "https://mi-tierra-verde.com/",
             "image": "images/eco-del-mar.webp",
@@ -58,6 +64,7 @@
           {
             "name": "ZEL Punta Cana",
             "address": "Punta Cana, Dominican Republic",
+            "email": "zelpuntacana@gmail.com",
             "phone": "+1 809-221-1290",
             "website": "https://www.zelhotels.com/",
             "image": "images/zel-punta-cana.webp",

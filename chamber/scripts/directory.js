@@ -98,8 +98,8 @@ async function loadCompanySpotlight() {
             <div class="company-info">
                 <h3>${member.name}</h3>
                 <p class="tagline">${member.tagline || 'Quality Service Guaranteed'}</p>
-                <p>${member.email}</p>
-                <p>${member.phone}</p>
+                <p><strong>Email:</strong> ${member.email}</p>
+                <p><strong>phone:</strong> ${member.phone}</p>
                 <a href="${member.website}" target="_blank">Visit Website</a>
             </div>
         `;
