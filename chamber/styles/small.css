@@ -42,9 +42,72 @@ h1 {
     padding: 1rem;
     text-align: center;
     }
+
+.theme-toggle {
+    display: flex;
+    position: center;
+    
+    }
+    
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    
+    }
+    
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    }
+    
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+    }
+    
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+    }
+    
+input:checked + .slider {
+    background-color: #2196f3;
+    }
+    
+input:checked + .slider:before {
+    transform: translateX(26px);
+    }
+    
+.theme-toggle.small-view {
+    display: block;
+    margin-right: 10px;
+    }
+    
+.theme-toggle.large-view {
+    display: none;
+    }
 .hero-content {
-    display: grid;
-    grid-template-columns: 100px auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
 }
 .hero-content img {
     max-width: 80px;
@@ -53,6 +116,7 @@ h1 {
 }
 
 .hero-content .company-name {
+    margin-left: 15px;
     text-align: left;
     margin-top: 10px;
     font-family: "Playfair Display", serif;
@@ -277,20 +341,34 @@ font-family:"Playfair Display", serif;
     text-align: center;
 }
 
+.spotlight-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--card-background);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 1rem auto;
+}
+
 .spotlight-card img{
-    width: 80%;
+    width: 50%;
     height: auto;
     border-radius: 8px;
 }
 
 .spotlight-card h3{
     font-size: 1.2rem;
-    margin: 10px 0;
+    margin: 0 0 10px 0;
 }
 
 .spotlight-card p {
     font-size: 0.9rem;
     color:  #555;
+    margin: 0.5rem 0;
 }
 
 .spotlight-card a {
@@ -306,6 +384,42 @@ font-family:"Playfair Display", serif;
 
 .spotlight-card a:hover {
     background: #005bb5;
+}
+
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode header {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode .events,
+body.dark-mode .weather,
+body.dark-mode .forecast,
+body.dark-mode .company-spotlight {
+    background-color: #333;
+    color: #ffffff;
+}
+
+body.dark-mode .spotlight-card {
+    background-color: #444;
+    color: #ffffff;
+}
+
+body.dark-mode .spotlight-card p {
+    color: #ddd;
+}
+
+body.dark-mode .spotlight-card a {
+    background-color: #0073e6;
+    color: #ffffff;
+}
+
+body.dark-mode .spotlight-card a:hover {
+    background-color: #005bb5;
 }
 
 footer {

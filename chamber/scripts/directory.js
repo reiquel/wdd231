@@ -95,8 +95,8 @@ async function loadCompanySpotlight() {
 
     spotlightSection.innerHTML = selectedMembers.map(member => `
         <div class="spotlight-card">
-            <img src="${member.image}" alt="${member.name}" loading="lazy">
             <h3>${member.name}</h3>
+            <img src="${member.image}" alt="${member.name}" loading="lazy">
             <p>${member.description}</p>
             <p><strong>Address:</strong> ${member.address}</p>
             <p><strong>Phone:</strong> ${member.phone}</p>

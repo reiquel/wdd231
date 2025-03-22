@@ -52,3 +52,39 @@ async function getData() {
 } 
 
 getData();
+
+const toggleCheckbox = document.getElementById('theme-toggle-checkbox');
+
+function setTheme(theme) {
+    document.body.classList.toggle('dark-mode', theme === 'dark');
+    localStorage.setItem('theme', theme);
+}
+
+function toggleTheme() {
+    const isDarkMode = document.body.classList.contains('dark-mode');
+    setTheme(isDarkMode ? 'light' : 'dark');
+}
+
+const savedTheme = localStorage.getItem('theme');
+
+
+const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+
+if (savedTheme) {
+    setTheme(savedTheme);
+    toggleCheckbox.checked = savedTheme === 'dark';
+} else {
+    setTheme(systemPrefersDark ? 'dark' : 'light');
+    toggleCheckbox.checked = systemPrefersDark;
+}
+
+
+toggleCheckbox.addEventListener('change', toggleTheme);
+
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+    const newTheme = e.matches ? 'dark' : 'light';
+    setTheme(newTheme);
+    toggleCheckbox.checked = newTheme === 'dark';
+});
