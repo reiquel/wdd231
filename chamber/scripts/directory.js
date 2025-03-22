@@ -89,7 +89,7 @@ async function loadCompanySpotlight() {
 
     const eligibleMembers = members.filter(member => member.membership_level === 2 || member.membership_level === 3);
 
-    const selectedMembers = eligibleMembers.sort(() => 0.5 - Math.random()).slice(0, Math.floor(Math.random() *2) + 2);
+    const selectedMembers = eligibleMembers.sort(() => 0.5 - Math.random()).slice(0, Math.floor(Math.random() *2) + 3);
 
     const spotlightSection = document.getElementById('spotlight');
 
