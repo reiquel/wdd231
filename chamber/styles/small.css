@@ -371,7 +371,7 @@ font-family:"Playfair Display", serif;
 }
 
 .company-spotlight img {
-    width: 28%;
+    width: 35%;
     height: auto;
     border-radius: 8px;
     margin: 0.5rem auto;
@@ -408,7 +408,6 @@ font-family:"Playfair Display", serif;
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 33%;
 }
 .company-info .tagline {
     text-align: center;
