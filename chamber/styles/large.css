@@ -1,23 +1,22 @@
 @media only screen and (min-width: 768px) {
     #hamburger-button {
-    display: none; 
+        display: none; 
     }
-    
+
     ul.menuLinks {
-    display: flex;
-    justify-content: flex-end;
+        display: flex;
+        justify-content: flex-end;
     }
-    
+
     ul li a:hover {
-    background-color: #f5caa5;
+        background-color: #f5caa5;
     }
-    
+
     nav {
-    grid-template-rows: 1fr; 
+        grid-template-rows: 1fr; 
     }
 
     #resort-display {
-
         display: grid;
         grid-template-columns: repeat(3, minmax(210px,1fr));
         gap: 1rem;
@@ -48,15 +47,12 @@
     .forecast {
         grid-column: 4/5;
         grid-row: 2;
-
     }
 
     .company-spotlight {
         grid-column: 1 /-1;
         grid-row: 3;
-
     }
-
 
     .forecast {
         display: grid;
@@ -72,5 +68,50 @@
     .events h2, .weather h2, .forecast h2, .company-spotlight h2 {
         text-align: center;
         margin-bottom: 1rem;
+    }
+
+    .company-spotlight {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .spotlight-card {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .spotlight-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .spotlight-card h3 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    .spotlight-card p {
+        font-size: 1rem;
+        color: #555;
+        text-align: left;
+    }
+
+    .spotlight-card a {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 8px 12px;
+        background: #0073e6;
+        color: #0a0808;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .spotlight-card a:hover {
+        background-color: #bed;
     }
 }

@@ -5,30 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="WDD 231 - Web Frontend Development 1 By Reiquel Y. Carela">
 <meta name="author" content="Reiquel Y. Carela">
-
-<!-- Open Graph Meta Tags -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://reiquel.github.io/wdd231/chamber/index.html" />
 <meta property="og:title" content="Chamber of Commerce Home Page " />
 <meta property="og:description" content="This website is a gateway to discovering the Sahara Oasis Region" />
 <meta property="og:image" content="https://reiquel.github.io/wdd231/chamber/images/logo.webp" />
-
 <title>The Chamber of Commerce Home Page</title>
-
-<!-- Favicon -->
 <link rel="icon" href="favicon.ico">
-
-<!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-<!-- css -->
 <link rel="stylesheet" href="styles/normalize.css">
 <link rel="stylesheet" href="styles/small.css">
 <link rel="stylesheet" href="styles/large.css" media="(min-width: 768px)">
-
-<!-- Javascript -->
 <script src="scripts/directory.js" defer></script>
 </head>
 <body>
@@ -56,7 +45,9 @@
             <source media="(max-width: 1024px)" srcset="images/cabo-rojo.webp">
             <img src="images/cabo-rojo.webp" alt="Lesson 06">
         </picture>
-        <a href="#" id="call-to-action">Join the chamber</a>
+        <div class="action-button-container">
+            <a href="#" id="call-to-action">Join the chamber</a>
+        </div>
     </section>
     <section class="events">
         <h2>Upcoming Events</h2>
