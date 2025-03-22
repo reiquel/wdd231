@@ -31,7 +31,7 @@ async function getWeatherForecast() {
 
         const forecast = data.list.filter((item, index) => index % 8 === 0).slice(0,3);
 
-        const main = document.querySelector('main');
+        const main = document.querySelector('.info-container');
         const weatherSection = document.createElement('section');
         weatherSection.classList.add('weather-forecast');
         weatherSection.innerHTML = `<h2> 3-day Weather Forecast</h2>`;
@@ -74,7 +74,7 @@ async function loadCompanySpotlight() {
 
     const selectedMembers = eligibleMembers.sort(() => 0.5 - Math.random()).slice(0, Math.floor(Math.random() *2) + 2);
 
-    const main = document.querySelector('main');
+    const main = document.querySelector('.info-container');
     const spotlightSection = document.createElement('section');
     spotlightSection.classList.add('company-spotlight');
     spotlightSection.innerHTML = `<h2>Company Spotlight</h2>`;
