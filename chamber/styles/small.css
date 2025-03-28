@@ -540,7 +540,7 @@ font-family:"Playfair Display", serif;
     border: none;
 }
 
-:modal {
+.modal {
     background-color: beige;
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0 / 0.1);
