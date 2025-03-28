@@ -522,6 +522,7 @@ font-family:"Playfair Display", serif;
 }
 
 .modal {
+    text-align: left;
     padding: 1em;
     max-width: 50ch;
     border: 0;
@@ -646,6 +647,7 @@ form {
 }
 
 .membership-benefits section {
+    text-align: center;
     background: var(--glass-effect);
     backdrop-filter: var(--glass-backdrop);
     border: var(--glass-border);
@@ -656,6 +658,7 @@ form {
     position: relative;
     overflow: hidden;
 }
+
 
 .membership-benefits section::before {
     content: '';
