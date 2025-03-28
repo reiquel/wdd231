@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
     presentCourses(courses);
     showFooter();
 
-
 });
 
     

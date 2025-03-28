@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="WDD 231 - Web Frontend Development 1 By Reiquel Y. Carela">
+<meta name="author" content="Reiquel Y. Carela">
+
+<!-- Open Graph Meta Tags -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://reiquel.github.io/wdd231/chamber/join.html" />
+<meta property="og:title" content="Chamber of Commerce Join Page " />
+<meta property="og:description" content="This website is a gateway to discovering the Sahara Oasis Region" />
+<meta property="og:image" content="https://reiquel.github.io/wdd231/chamber/images/logo.webp" />
+
+<title>The Chamber of Commerce Join Page</title>
+
+<!-- Favicon -->
+<link rel="icon" href="favicon.ico">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!-- css -->
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="stylesheet" href="styles/small.css">
+<link rel="stylesheet" href="styles/large.css" media="(min-width: 768px)">
+
+<!-- Javascript -->
+<script src="scripts/directory.js" defer></script>
+<script src="scripts/join.js" defer></script>
+</head>
+<body>
+<header class="hero">
+<div class="hero-content">
+<img src="images/logo.webp" alt="Company logo" width="100" height="100" loading="lazy">
+<span class="company-name">Sahara Oasis Chamber of Commerce</span>
+<button id="hamburger-button" aria-label="Toggle navigation menu"></button>
+</div>
+</header>
+
+<nav id="animateme">
+<ul class="menuLinks">
+<li><a href="index.html">Home</a></li>
+<li><a href="#">Discover</a></li>
+<li><a href="directory.html">Business Directory</a></li>
+<li class='active'><a href="join.html">Join</a></li>
+</ul>
+</nav>
+<main>
+   <h1>Join</h1>
+   <div class="all-info">
+    <div class="membership-form">
+        <Form action="thankyou.html" method="get">
+            <fieldset>
+                <h2>Membership Application Form</h2>
+                <label class="sbs" for="first-name">First Name </label>
+                <input type="text" name="first-name" id="first-name" required autocomplete="given-name" title="Please enter your first name">
+
+                <label class="sbs" for="last-name">Last Name </label>
+                <input type="text" name="last-name" id="first-name" required autocomplete="family-name" title="Please enter your last name">
+
+                <label class="sbs" for="title">Title </label>
+                <input type="text" name="title" id="title" pattern="[a-zA-Z\- ]{7,}" autocomplete="organization-title" title="Must contain only alpha characters, hyphens, and spaces with minimum 7 characters" >
+
+                <label class="sbs" for="email">Email </label>
+                <input type="text" name="email" id="email" placeholder="example@example.com" required title="Please enter a valid email address">
+
+                <label class="sbs" for="cell-phone">Cell Phone </label>
+                <input type="tel" name="cell-phone" id="cell-phone" required autocomplete="tel" title="Please enter your phone number">
+
+                <label class="sbs" for="business-name">Business Name </label>
+                <input type="text" name="business-name" id="business-name" required autocomplete="organization" title="Please enter your business name">
+
+                <br>
+                <label class="sbs" for="membership-level">Membership Level </label>
+                <select type="text" name="membership-level" id="membership-level" required title="Please select a membership level">
+                    <option value="">-- Membership level --</option>
+                    <option value="np">NP Membership</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>     
+                </select>
+
+                <br><br>
+                <label class="sbs" for="business-description">Business Description</label>
+                <textarea type="text" name="business-description" id="business-description" title="Brief description of your business"></textarea>
+
+                <input type="hidden" name="date-and-time" id="date-and-time">
+                <br><br>
+                <input id="sign-1" type="submit" value="Sign Up for Membership">
+            </fieldset>
+        </Form>
+        </div>
+    <div class="membership-benefits">
+        <h2>Membership Levels</h2>
+        <section class="non-profit">
+            <h3>Non-profit Membership Level</h3>
+            <button class="button open-button" data-modal="nonprofit-modal">Learn More</button>
+            <dialog class="modal" id="nonprofit-modal">
+                <h3>Non-proift Organizations</h3>
+                <ul>
+                    <li>Free membership</li>
+                    <li>Access to member trainings</li>
+                    <li>Listing in member directory</li>
+                    <li>No events discounts</li>
+                    <li>No advertising benefits</li>
+                </ul>
+                <button class="close-button">❌</button>
+            </dialog>
+        </section>
+        <section class="bronze-membership">
+            <h3>Bronze Membership Level</h3>
+            <button class="button open-button" data-modal="bronze-modal">Learn More</button>
+            <dialog class="modal" id="bronze-modal">
+                <h3>Bronze Membership Benefits</h3>
+                <ul>
+                    <li>Annual cost: $200</li>
+                    <li>10% discount on chamber events</li>
+                    <li>Basic advertising opportunities</li>
+                    <li>Access to member trainings</li>
+                    <li>Listing in member directory</li>
+                </ul>
+                <button class="close-button">❌</button>
+            </dialog>
+        </section>
+        <section class="silver-profit">
+            <h3>Silver Membership Level</h3>
+            <button class="button open-button" data-modal="silver-modal">Learn More</button>
+            <dialog class="modal" id="silver-modal">
+                <h3>Silver Membership Benefits</h3>
+                <ul>
+                    <li>Annual cost: $400</li>
+                    <li>15% discount on chamber events</li>
+                    <li>Enhanced advertising opportunities</li>
+                    <li>Priority access to trainings</li>
+                    <li>Featured listing in member directory</li>
+                    <li>Invitation to exclusive networking events</li>
+                </ul>
+                <button class="close-button">❌</button>
+            </dialog>
+        </section>
+        <section class="non-profit">
+            <h3>Gold Membership Level</h3>
+            <button class="button open-button" data-modal="gold-modal">Learn More</button>
+            <dialog class="modal" id="gold-modal">
+                <h3>Gold Membership Benefits</h3>
+                <ul>
+                    <li>Annual cost: $600</li>
+                    <li>20% discount on chamber events</li>
+                    <li>Premium advertising opportunities</li>
+                    <li>Access to advanced skill courses</li>
+                    <li>Spotlight position in member directory</li>
+                    <li>VIP access to all chamber events</li>
+                    <li>Dedicated account representative</li>
+                </ul>
+                <button class="close-button">❌</button>
+            </dialog>
+        </section>
+    </div>
+   </div>
+</main>
+<footer>
+    <div class="demographics-info">
+        <p><strong>Chamber of Commerce Home Page</strong></p>
+        <p>📍Address:Sahara Chamber of Commerce Av. Independencia #123, Santo Domingo, Distrito Nacional,República Dominicana</p>
+        <p>📧 Email:info@saharachamber.com</p>
+        <p>📞 Phone:+1 (809) 555-1234</p>
+    </div>
+
+    <div class="social-icons">
+        <a href="https://www.youtube.com" target="_blank" class="icon-youtube">
+            <img src="images/youtube.webp" alt="Link to youtube"> 
+        </a>
+        <a href="https://www.twitter.com" target="_blank" class="icon-twitter">
+            <img src="images/Twitter.webp" alt="Link to twitter"> 
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" class="icon-linkedin">
+            <img src="images/Linkedin.webp" alt="Link to youtube"> 
+        </a>
+    </div>
+    <div class="copyright">
+        <p>WDD231 Class Project</p>
+        <p>&copy; <span id="currentyear"></span> Reiquel Y. Carela | Dominican Republic</p>
+        <p id="lastModified"></p>
+    </div>
+</footer>
+    </body>
+</html>

@@ -164,6 +164,26 @@
     .copyright {
         grid-column: 3/4;
     }
+
+    .all-info {
+        display: grid;
+        grid-template-columns:repeat(2, 1fr) ;
+        gap: 2rem;
+        padding: 2rem;
+        max-width: 1400px;
+        margin: auto;
+    }
+
+    .membership-form {
+        grid-column: 1/2;
+        
+    }
+
+    .membership-benefits {
+        grid-column: 2/3;
+    }
+
+
 }
 
 @media (min-width: 767px) and (max-width: 858px) {
