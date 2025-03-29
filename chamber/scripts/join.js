@@ -36,4 +36,10 @@ function showFooter() {
     document.getElementById('lastModified').textContent = `Last Modified: ${document.lastModified}`;
 }
 
+const dateTimeField = document.getElementById('date-and-time');
+if(dateTimeField) {
+    const now = new Date();
+    dateTimeField.value = now.toLocaleString();
+}
+
 showFooter();
