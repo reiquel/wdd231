@@ -165,6 +165,10 @@
         grid-column: 3/4;
     }
 
+}
+
+@media only screen and (min-width: 914px) {
+
     .all-info {
         display: grid;
         grid-template-columns:repeat(2, 1fr) ;
@@ -182,7 +186,6 @@
     .membership-benefits {
         grid-column: 2/3;
     }
-
 
 }
 
