@@ -727,7 +727,7 @@ form input[type=submit] {
     text-align: center;
 }
 
-.card button {
+.card a {
     background-color: #8acefc;
     color: black;
     border: none;
@@ -737,7 +737,7 @@ form input[type=submit] {
     margin-top: 1rem;
 }
 
-.card .button:hover {
+.card a:hover {
     background-color: #00090f;
     color: #ffffff;
 }
