@@ -696,6 +696,13 @@ form input[type=submit] {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .card-content {
@@ -873,6 +880,7 @@ form input[type=submit] {
         flex-direction: row;
         align-items: center;
         gap: 1rem;
+        transition: all 0.3s ease;
     }
 
     .card img {
@@ -882,6 +890,7 @@ form input[type=submit] {
         margin: 0.5rem auto;
         object-fit: cover;
         margin-left: -30px;
+        
     }
 
     .card-column-26 {

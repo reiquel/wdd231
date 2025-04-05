@@ -21,6 +21,9 @@ if(dateTimeField) {
 
 showFooter();
 
+// Make the cards show
+
+
 document.addEventListener('DOMContentLoaded', async function(){
     try {
         const response = await fetch('attractions.json');
