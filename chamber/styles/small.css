@@ -742,7 +742,7 @@ form input[type=submit] {
     margin-bottom: 1rem;
 }
 
-.card a:hover {
+.card button:hover {
     background-color: #00090f;
     color: #ffffff;
 }
