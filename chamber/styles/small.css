@@ -731,7 +731,8 @@ form input[type=submit] {
 }
 
 .card .button:hover {
-    background-color: #2980b9;
+    background-color: #00090f;
+    color: #ffffff;
 }
 
 .visit-message {
