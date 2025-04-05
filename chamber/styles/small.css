@@ -659,8 +659,13 @@ form input[type=submit] {
     background-color: #f8f9fa;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
+.sidebar h1 {
+    font-size: xx-large;
+}
   .demographics, .discover-main h1, .visit-message {
     text-align: center;
   }
