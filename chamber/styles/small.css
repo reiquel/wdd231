@@ -713,8 +713,8 @@ form input[type=submit] {
 }
 
 .card button {
-    background-color: #3498db;
-    color: white;
+    background-color: #8acefc;
+    color: black;
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 8px;
