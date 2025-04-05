@@ -663,7 +663,6 @@ form input[type=submit] {
 
   .demographics, .discover-main h1, .visit-message {
     text-align: center;
-    color: var(--primary-color);
   }
 
   .gallery {
