@@ -652,7 +652,78 @@ form input[type=submit] {
     border: 1px solid #E07A5F;
     border-radius: 6px;
   }
+  /* Discover page styling */
+  .discover-main {
+    display: block;
+  }
 
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    grid-template-areas: 
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+  }
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.card address {
+    font-style: normal;
+    color: #7f8c8d;
+    margin: 0.5rem 0;
+}
+
+.card p {
+    color: #34495e;
+}
+
+.card button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.card .button:hover {
+    background-color: #2980b9;
+}
+
+.visit-message {
+    background-color: #e8f8fc;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.rem;
+}
   footer {
     background-color: var(--secondayr-color);
     color: var(--primary-color);
@@ -747,6 +818,43 @@ form input[type=submit] {
    border: none;
 }
 
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    
+    .discover-main {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 2rem;
+    }
 
+    .sidebar {
+        grid-column: 1;
+    }
+
+    .gallery {
+        grid-column: 2;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        grid-template-areas:
+        "card1 card2"
+        "card3 card4"
+        "card5 card6"
+        "card7 card8";
+    }
+
+    .card:nth-child(1) {grid-area: card1;}
+    .card:nth-child(2) {grid-area: card2;}
+    .card:nth-child(3) {grid-area: card3;}
+    .card:nth-child(4) {grid-area: card4;}
+    .card:nth-child(5) {grid-area: card5;}
+    .card:nth-child(6) {grid-area: card6;}
+    .card:nth-child(7) {grid-area: card7;}
+    .card:nth-child(8) {grid-area: card8;}
+
+    .card img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+}
 
     

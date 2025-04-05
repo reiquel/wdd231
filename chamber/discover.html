@@ -8,12 +8,12 @@
 
 <!-- Open Graph Meta Tags -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://reiquel.github.io/wdd231/chamber/index.html" />
-<meta property="og:title" content="Chamber of Commerce Home Page " />
+<meta property="og:url" content="https://reiquel.github.io/wdd231/chamber/discover.html" />
+<meta property="og:title" content="Chamber of Commerce Discover Page " />
 <meta property="og:description" content="This website is a gateway to discovering the Sahara Oasis Region" />
 <meta property="og:image" content="https://reiquel.github.io/wdd231/chamber/images/logo.webp" />
 
-<title>The Chamber of Commerce Home Page</title>
+<title>The Chamber of Commerce Discover Page</title>
 
 <!-- Favicon -->
 <link rel="icon" href="favicon.ico">
@@ -29,8 +29,7 @@
 <link rel="stylesheet" href="styles/large.css" media="(min-width: 768px)">
 
 <!-- Javascript -->
-<script src="scripts/directory.js" defer></script>
-<script src="scripts/lastvisit.js" defer></script>
+<script src="scripts/discover.js" defer></script>
 </head>
 <body>
 <header class="hero">
@@ -42,45 +41,32 @@
 </header>
 <nav id="animateme">
 <ul class="menuLinks">
-<li class='active'><a href="index.html">Home</a></li>
-<li><a href="discover.html">Discover</a></li>
-<li><a href="directory.html">Sahara Directory</a></li>
+<li><a href="index.html">Home</a></li>
+<li class='active'><a href="discover.html">Discover</a></li>
+<li><a href="directory.html">Business Directory</a></li>
 <li><a href="join.html">Join</a></li>
 </ul>
 </nav>
-<main>
-<h1 id="home">Home</h1>    
-<div class="info-container">
-    <section class="hero-image">
-        <picture class="optipic">
-            <source media="(max-width: 766px)" srcset="images/punta-cana.webp">
-            <source media="(max-width: 1024px)" srcset="images/cabo-rojo.webp">
-            <img src="images/cabo-rojo.webp" alt="Lesson 06" loading="lazy">
-        </picture>
-        <a href="join.html" id="call-to-action">Join the chamber</a>
-    </section>
-    <section class="events">
-        <h2>Upcoming Events</h2>
-        <div class="event-list">
-            <p>1. Business Networking Mixer - October 15, 2025</p>
-            <p>2. Entrepreneurship Workshop - November 5, 2025</p>
-            <p>3. Annual Gala Dinner - December 10, 2025</p>
-            <p>4. Tech Innovation Summit - January 20, 2026</p>
-            <p>5. Small Business Expo - February 15, 2026</p>
+<main class="discover-main">
+    <h1>Discover Dominican Republic</h1>
+    <div class="sidebar">
+        <div class="visit-message">
+            <h2>Visitor Information</h2>
+            <p id="visit-message">Welcome! Let us know if you have any questions.</p>
         </div>
-    </section>
-    <section class="weather">
-        <h2>Current Weather</h2>
-        <div id="current-weather"></div>
-    </section>
-    <section class="forecast">
-        <h2>Weather Forecast</h2>
-        <div id="forecast"></div>
-    </section>
-    <div class="company-spotlights">
-        
+        <div class="demographics">
+            <h2>About Dominican Republic</h2>
+            <p>Population: 12 million</p>
+            <p>Capital: Santo Domingo</p>
+            <p>Language: Spanish</p>
+            <p>Currency: Dominican Peso (DOP)</p>
+            <P>known for: Beautiful beaches, merengue music, baseball and more!</P>
+        </div>
     </div>
-</div>
+
+    <div class="gallery" id="gallery">
+        <!-- Cards will be generated from the JSON file -->
+    </div>
 </main>
 <footer>
     <div class="demographics-info">

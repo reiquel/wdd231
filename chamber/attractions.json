@@ -1,0 +1,57 @@
+[
+    { 
+        "name": "Punta Cana Beaches",
+        "address": "Punta Cana, La Altagracia Province",
+        "image": "images/punta-cana.webp",
+        "description": "World-famous white beaches with crystal-clear waters, perfect for water sports."
+},
+
+{ 
+    "name": "Los Haitises National Park",
+    "address": "Sabana de la Mar, Hato Mayor Province",
+    "image": "images/haitises.webp",
+    "description": "Lush mangrove forests, ancient Taino caves, and stunning biodiversity in this protected area."
+},
+
+{ 
+    "name": "Colonial Zone, Santo Domingo",
+    "address": "Zona Colonial, Santo Domingo",
+    "image": "images/colonial.webp",
+    "description": "The first European settlement in the Americas, featuring 16th-century architecture and history."
+},
+
+{ 
+    "name": "27 Waterfalls of Damajagua",
+    "address": "Puerto Plata Province",
+    "image": "images/charcos.webp",
+    "description": "Natural water park where you can jump, slide and swim through a series of cascading waterfalls."
+},
+
+{ 
+    "name": "Mount Isabel de Torres",
+    "address": "Puerto Plata",
+    "image": "images/isabel.webp",
+    "description": "Scenic mountain with a cable car ride to the top featuring a botanical garden and Christ statue."
+},
+
+{ 
+    "name": "Saona Island",
+    "address": "La Altagracia Province",
+    "image": "images/saona.webp",
+    "description": "Pristine tropical island with palm-lined beaches, part of the East National Park."
+},
+
+{ 
+    "name": "Jarabacoa Mountain Town",
+    "address": "La Vega Province",
+    "image": "images/jarabacoa.webp",
+    "description": "Known as the 'city of Everlasting Spring' with cool climate, rivers, and adventure sports."
+},
+
+{ 
+    "name": "Larimar Museum",
+    "address": "Av. Roberto Pastoriza 412, Santo Domingo 10127",
+    "image": "images/larimar.webp",
+    "description": "Showcases the rare blue larimar stone found only in the Dominican Republic."
+}
+]
