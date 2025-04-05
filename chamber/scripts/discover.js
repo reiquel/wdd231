@@ -42,8 +42,8 @@ document.addEventListener('DOMContentLoaded', async function(){
                     <figcaption>${attraction.name}</figcaption>
                 </figure>
                 <div class="card-column-26">
-                <address>${attraction.address}</address>
                 <p>${attraction.description}</p>
+                <address>${attraction.address}</address>
                 </div>
                 </div>
                 <button>Learn More</button>
