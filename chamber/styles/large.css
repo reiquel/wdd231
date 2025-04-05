@@ -266,6 +266,20 @@
             "card4 card5 card6"
             "card7 card8 ";
     }
+    .card-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .card img {
+        width: 35%;
+        height: auto;
+        border-radius: 8px;
+        margin: 0.5rem auto;
+        object-fit: cover;
+    }
 
     .sidebar {
         padding: 1rem;

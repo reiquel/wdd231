@@ -36,12 +36,14 @@ document.addEventListener('DOMContentLoaded', async function(){
             card.className = 'card';
             card.innerHTML = `
                 <h2>${attraction.name}</h2>
+                <div class="card-row">
                 <figure>
                     <img src="${attraction.image}" alt="${attraction.name}" loading="lazy">
                     <figcaption>${attraction.name}</figcaption>
                 </figure>
                 <address>${attraction.address}</address>
                 <p>${attraction.description}</p>
+                </div>
                 <button>Learn More</button>
             `;
 
