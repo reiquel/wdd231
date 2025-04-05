@@ -836,6 +836,9 @@ form input[type=submit] {
         gap: 2rem;
     }
 
+    .sidebar {
+        grid-column: 1 / 3;
+    }
 
 
     .gallery {
