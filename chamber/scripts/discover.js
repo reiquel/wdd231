@@ -49,7 +49,9 @@ document.addEventListener('DOMContentLoaded', async function(){
                 <address>${attraction.address}</address>
                 </div>
                 </div>
-                <a href="${attraction.URL}" target="_blank" aria-label="Learn more about ${attraction.name}"> Learn More </a>
+                <a href="${attraction.URL}" target="_blank" aria-label="Learn more about ${attraction.name}">
+                    <button>Learn More ${attraction.name}</button>
+                </a>
             `;
 
             gallery.appendChild(card);
