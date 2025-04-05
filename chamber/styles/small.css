@@ -697,13 +697,8 @@ form input[type=submit] {
     height: 200px;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
 }
 
-.card img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
 
 .card-content {
     padding: 1rem;
@@ -902,10 +897,7 @@ form input[type=submit] {
         display: flex;
         flex-direction: column;
     }
-    .card img:hover {
-        transform: scale(1.05);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    }
+
 }
 
     
