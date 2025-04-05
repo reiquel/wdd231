@@ -730,7 +730,7 @@ form input[type=submit] {
     background-color: #e8f8fc;
     padding: 1rem;
     border-radius: 8px;
-    margin-bottom: 1.rem;
+    margin-bottom: 1rem;
 }
   footer {
     background-color: var(--secondayr-color);
