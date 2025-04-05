@@ -270,15 +270,22 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 1rem;
+        gap: 1.5rem;
+        padding: 1rem;
     }
 
     .card img {
-        width: 35%;
-        height: auto;
+        width: 140px;
+        height: 140px;
         border-radius: 8px;
         margin: 0.5rem auto;
         object-fit: cover;
+        margin-left: -40px;
+    }
+
+    .card-column-26 {
+        display: flex;
+        flex-direction: column;
     }
 
     .sidebar {

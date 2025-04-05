@@ -41,8 +41,10 @@ document.addEventListener('DOMContentLoaded', async function(){
                     <img src="${attraction.image}" alt="${attraction.name}" loading="lazy">
                     <figcaption>${attraction.name}</figcaption>
                 </figure>
+                <div class="card-column-26">
                 <address>${attraction.address}</address>
                 <p>${attraction.description}</p>
+                </div>
                 </div>
                 <button>Learn More</button>
             `;
