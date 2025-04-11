@@ -334,3 +334,8 @@
   color: var(--accent-color);
   transform: translateX(-3px);
 }
+
+.icon-youtube img, .icon-twitter img, .icon-linkedin img {
+  width: 50px;
+  height: 50px;
+}
