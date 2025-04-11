@@ -3,7 +3,7 @@
     .header {
         padding: 1rem 2rem;
         display: flex;
-        flex-direction: center;
+        align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
     }
@@ -58,7 +58,7 @@
       }
 
     #clothing-container, #show-container {
-        grid-auto-columns: repeat(3, minmax(200px, 1fr));
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
     }
     .cart-icon {
         margin-left: 1rem;
