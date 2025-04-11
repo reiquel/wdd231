@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 - Final Project By Reiquel Y. Carela">
+    <meta name="author" content="Reiquel Y. Carela">
+
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://reiquel.github.io/site-plan/">
+    <meta property="og:title" content="Final Project Cart Page" />
+    <meta property="og:title" content="WDD 231: Web Frontend Development 1">
+    <meta property="og:description" content="Explore my journey in web frontend development with projects, quizzes and more!" />
+
+
+    <title>Shoe Store Cart Page</title>
+
+
+    <link rel="favicon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    </head>
+    <body>
+        <header class="header">
+                <button id="openNav" class="nav-toggle" aria-label="Open menu">☰</button>
+                <img src="images/logo.webp" alt="Company logo" width="100" height="100" loading="lazy">
+                <h1 class="company-name">R&M ReStyle Closet</h1>
+                <a href="cart.html" class="cart-icon" id="cart-icon">
+                    🛒 <span class="cart-count" id="cart-count">0</span>
+                </a>
+
+        </header>
+
+        <nav class="side-navbar" id="sideNavbar">
+            <button id="closeNav" class="close-btn" aria-label="Close menu">×</button>
+            <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="products.html" class="nav-link">Cart</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav> 
+        <main class="main-content cart-page">
+            <section class="cart-container">
+                <h2 class="cart-title">Your Shopping Cart</h2>
+                <div id="cartItems"></div>
+                <div class="cart-summary">
+                    <p class="cart-total">Total: <span id="cartTotal">$0.00</span></p>
+                    <form id="checkoutForm" action="order-confirmation.html" method="get">
+                        <input type="hidden" id="orderTotalInput" name="total" value="0.00">
+                        <button type="submit" class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
+                    </form>
+                </div>
+        </main>
+        <footer>
+            <div class="demographics-info">
+                <p><strong>R&M ReStyle Closet Home Page</strong></p>
+                <p>📍Address:R&M ReStyle Closet Av. Egbert Morrison, Santo Domingo, Distrito Nacional,República Dominicana</p>
+                <p>📧 Email:info@R&Mrestyle.com</p>
+                <p>📞 Phone:+1 (809) 325-6197</p>
+            </div>
+        
+            <div class="social-icons">
+                <a href="https://www.youtube.com" target="_blank" class="icon-youtube">
+                    <img src="images/youtube.webp" alt="Link to youtube"> 
+                </a>
+                <a href="https://www.twitter.com" target="_blank" class="icon-twitter">
+                    <img src="images/twitter-icon.webp" alt="Link to twitter"> 
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" class="icon-linkedin">
+                    <img src="images/linkedin-icon.webp" alt="Link to youtube"> 
+                </a>
+            </div>
+            <div class="copyright">
+                <p>WDD231 Class Project</p>
+                <p>&copy; <span id="currentyear"></span> Reiquel Y. Carela | Dominican Republic</p>
+                <p id="lastModified"></p>
+            </div>
+        </footer>
+    </body>
+</html>
+
