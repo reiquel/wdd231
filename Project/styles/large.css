@@ -1,34 +1,39 @@
+@media only screen and (min-width: 768px) {
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .demographics-info {
+        grid-column: 1/2;
+    }
+    .social-icons {
+        grid-column: 2/3;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2px;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .icon-youtube img, .icon-twitter img, .icon-linkedin img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .copyright {
+        grid-column: 3/4;
+    }
 
 
-
-
-
-
-
-
-
-
-footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
 }
-.demographics-info {
-    grid-column: 1/2;
-}
-.social-icons {
-    grid-column: 2/3;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2px;
-    justify-content: center;
-    align-content: center;
-}
 
-.icon-youtube img, .icon-twitter img, .icon-linkedin img {
-    width: 50px;
-    height: 50px;
-}
 
-.copyright {
-    grid-column: 3/4;
-}
+
+
+
+
+
+
+
+
