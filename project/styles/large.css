@@ -4,7 +4,10 @@
         padding: 1rem 2rem;
     }
 
-    .nav-toggle {
+    .company-name {
+        font-size: 2rem;
+    }
+    .nav-toggle, .close-btn {
         display: none;
     }
 
@@ -15,17 +18,25 @@
         background: transparent;
         box-shadow: none;
         padding: 0;
+        right: auto;
     }
 
     .nav-list {
         display: flex;
-        justify-content: center;
-        gap: 2rem;
+        gap: 1rem;
         margin-top: 0;
     }
 
     .nav-link {
         padding: 0.5rem 1rem;
+    }
+
+    #clothing-container, #show-container {
+        grid-auto-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .cart-container {
+        padding: 2rem;
     }
 
     .product-grid {
@@ -38,6 +49,9 @@
     footer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        text-align: left;
+        padding: 2rem;
     }
     .demographics-info {
         grid-column: 1/2;
