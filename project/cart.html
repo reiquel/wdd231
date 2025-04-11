@@ -9,12 +9,12 @@
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://reiquel.github.io/site-plan/">
-    <meta property="og:title" content="Final Project Confirmation Page" />
+    <meta property="og:title" content="Final Project Cart Page" />
     <meta property="og:title" content="WDD 231: Web Frontend Development 1">
     <meta property="og:description" content="Explore my journey in web frontend development with projects, quizzes and more!" />
 
 
-    <title>Shoe Store Confirmation Page</title>
+    <title>Shoe Store Cart Page</title>
 
 
     <link rel="favicon" href="favicon.ico">
@@ -42,24 +42,21 @@
             <button id="closeNav" class="close-btn" aria-label="Close menu">×</button>
             <ul class="nav-list">
             <li><a href="index.html" class="nav-link">Home</a></li>
-            <li><a href="products.html" class="nav-link">Cart</a></li>
+            <li><a href="cart.html" class="nav-link">Cart</a></li>
             <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
         </nav> 
-        <main class="main-content">
-            <section class="confirmation-container">
-                <div class="confirmation-card">
-                  <div class="confirmation-icon">✓</div>
-                  <h2>Thank You For Your Order!</h2>
-                  <p class="confirmation-message">Your order has been confirmed and will be processed shortly.</p>
-                  <div class="order-details">
-                    <p><strong>Order Number:</strong> #TRENDY-<span id="orderNumber"></span></p>
-                    <p><strong>Date:</strong> <span id="orderDate"></span></p>
-                    <p><strong>Total:</strong> $<span id="orderTotal"></span></p>
-                  </div>
-                  <a href="index.html" class="continue-shopping">Continue Shopping</a>
+        <main class="main-content cart-page">
+            <section class="cart-container">
+                <h2 class="cart-title">Your Shopping Cart</h2>
+                <div id="cartItems"></div>
+                <div class="cart-summary">
+                    <p class="cart-total">Total: <span id="cartTotal">$0.00</span></p>
+                    <form id="checkoutForm" action="order-confirmation.html" method="get">
+                        <input type="hidden" id="orderTotalInput" name="total" value="0.00">
+                        <button type="submit" class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
+                    </form>
                 </div>
-              </section>
         </main>
         <footer>
             <div class="demographics-info">
@@ -88,3 +85,4 @@
         </footer>
     </body>
 </html>
+
