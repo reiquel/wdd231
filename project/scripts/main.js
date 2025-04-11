@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () =>{
       switch(path) {
         case 'index.html':
         case '':
-            renderProducts();
+            renderProducts(null, 'clothing-container');
             break;
         case 'cart.html':
             renderCartItems();
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () =>{
             setupOrderConfirmation();
             break;
         default:
-            renderProducts();
+            renderProducts(null, 'clothing-container');
       }
 
 })
