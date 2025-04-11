@@ -7,20 +7,29 @@
     .company-name {
         font-size: 2rem;
     }
-    .nav-toggle, .close-btn {
+    .nav-toggle {
         display: none;
     }
 
-    .sid-navbar {
+    .side-navbar {
         position: static;
         width: auto;
+        max-width: none;
         height: auto;
-        background: transparent;
+        background: none;
         box-shadow: none;
         padding: 0;
-        right: auto;
-    }
+        display: flex;
+        justify-content: center;
+        transition: none;
+      }
 
+      .side-navbar.active {
+        right: auto;
+      }
+      .close-btn {
+        display: none;
+      }
     .nav-list {
         display: flex;
         gap: 1rem;
@@ -30,6 +39,10 @@
     .nav-link {
         padding: 0.5rem 1rem;
     }
+
+    .close-btn {
+        display: none;
+      }
 
     #clothing-container, #show-container {
         grid-auto-columns: repeat(auto-fill, minmax(200px, 1fr));
