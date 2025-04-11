@@ -5,6 +5,10 @@ import { setupOrderConfirmation } from "./confirmation.js";
 document.addEventListener('DOMContentLoaded', () =>{
     updateCart();
 
+    
+    document.getElementById('currentyear').textContent = new Date().getFullYear();
+    document.getElementById('lastModified').textContent = document.lastModified;
+
     const sideNav = document.getElementById('sideNavbar');
     const openNav = document.getElementById('openNav');
     const closeNav = document.getElementById('closeNav');
@@ -13,14 +17,14 @@ document.addEventListener('DOMContentLoaded', () =>{
         openNav.addEventListener('click', () => {
             sideNav.classList.add('active');
             document.body.style.overflow = 'hidden';
-        })
+        });
     }
 
     if (closeNav) {
         closeNav.addEventListener('click', () => {
             sideNav.classList.remove('active');
             document.body.style.overflow = '';
-        })
+        });
     }
 
     document.addEventListener('click', (e) => {
@@ -36,6 +40,7 @@ document.addEventListener('DOMContentLoaded', () =>{
 
       switch(path) {
         case 'index.html':
+        case '':
             renderProducts('men');
             renderProducts('women');
             renderProducts('accessories');
@@ -51,6 +56,4 @@ document.addEventListener('DOMContentLoaded', () =>{
             renderProducts();
       }
 
-      document.getElementById('currentyear').textContent = new Date().getFullYear();
-      document.getElementById('lastModified').textContent = document.lastModified;
 })

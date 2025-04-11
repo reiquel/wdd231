@@ -11,7 +11,6 @@ export function setupOrderConfirmation() {
     const options = {year: 'numeric', month: 'long', day: 'numeric'};
     document.getElementById('orderDate').textContent = new Date().toLocaleDateString('en-US', options);
 
-    document.getElementById('cartCount').textContent = '0';
+    document.getElementById('cart-count').textContent = '0';
 }
 
-setupOrderConfirmation();

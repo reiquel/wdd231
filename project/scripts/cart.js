@@ -34,7 +34,7 @@ function saveCart() {
 }
 
 export function updateCart() {
-    const cartCount  = document.getElementById("cartCount");
+    const cartCount  = document.getElementById("cart-count");
     if (cartCount) {
         cartCount.textContent = getCartCount();
     }

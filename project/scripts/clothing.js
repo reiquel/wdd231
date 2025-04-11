@@ -3,16 +3,16 @@ import { addToCart} from "./cart.js";
 
 
 export async function renderProducts(category) {
-    const productGrid = document.getElementById("clothing-container") 
-        if (!productGrid) return;
+    const container = document.getElementById("clothing-container") || document.getElementById("shoe-container");
+        if (!container) return;
     
         try {
             const response = await fetch("./clothing.json");
             const products = await response.json();
 
-            const categoryProducts = products[category]  || 
-                                     Object.values(products).flat();
-            productGrid.innerHTML = categoryProducts.map(product =>`
+            const categoryProducts = products[category]  || Object.values(products).flat();
+                                     
+            container.innerHTML = categoryProducts.map(product =>`
                 <div class="product-card">
                     <img src="images/${product.image}" alt="${product.name}" class="product-image">
                     <div class="product-info">
@@ -29,18 +29,17 @@ export async function renderProducts(category) {
                     const productId = parseInt(e.target.dataset.id);
                     const product = Object.values(products).flat().find(p => p.id === productId);
 
-                    if(product) {
-                        if (addToCart(product)) {
+                    if(product && addToCart(product)) {
+                        
                             const card = e.target.closest(".product-card");
                             card.style.transform = "scale(1.05)";
                             setTimeout(() => {
                                 card.style.transform = "";
-                            },300)
+                            },300);
                         }
-                    }
-                })
-            })
+                });
+            });
         } catch (error) {
-            productGrid.innerHTML = `<p>Error loading products. Please try again later.</p>`;
+            container.innerHTML = `<p>Error loading products. Please try again later.</p>`;
         }
 }
