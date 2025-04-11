@@ -16,12 +16,14 @@
         width: auto;
         max-width: none;
         height: auto;
+        background-color: var(--primary-color);
         background: none;
         box-shadow: none;
         padding: 0;
         display: flex;
         justify-content: center;
         transition: none;
+      
       }
 
       .side-navbar.active {
@@ -38,6 +40,10 @@
 
     .nav-link {
         padding: 0.5rem 1rem;
+        color: #fff;
+        border-radius: 4px;
+        transition: background-color 03s ease-in-out;
+  
     }
 
     .close-btn {
