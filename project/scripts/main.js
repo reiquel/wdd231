@@ -44,6 +44,12 @@ document.addEventListener('DOMContentLoaded', () =>{
             renderProducts('men', 'clothing-container');
             renderProducts('women', 'clothing-container');
             renderProducts('accessories', 'shoe-container');
+            renderProducts('men', 'clothing-container');
+            renderProducts('women', 'clothing-container');
+            renderProducts('accessories', 'shoe-container');
+            renderProducts('men', 'clothing-container');
+            renderProducts('women', 'clothing-container');
+            renderProducts('accessories', 'shoe-container');
             break;
         case 'cart.html':
             renderCartItems();
