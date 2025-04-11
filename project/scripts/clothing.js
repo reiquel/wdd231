@@ -7,7 +7,7 @@ export async function renderProducts(category) {
         if (!container) return;
     
         try {
-            const response = await fetch("../clothing.json");
+            const response = await fetch('clothing.json');
             const products = await response.json();
 
             const categoryProducts = products[category]  || Object.values(products).flat();
