@@ -7,7 +7,7 @@
     "women": [
       { "id": 4, "name": "Floral Dress", "price": 49.99, "category": "women", "image": "women-dress.jpg" },
       { "id": 5, "name": "High-Waist Skirt", "price": 39.99, "category": "women", "image": "women-skirt.jpg" },
-      { "id": 6, "name": "Crop Top", "price": 29.99, "category": "women", "image": "women-top.jpg" }
+      { "id": 6, "name": "Blouse", "price": 29.99, "category": "women", "image": "women-blouse.jpg" }
     ],
     "accessories": [
       { "id": 7, "name": "Leather Belt", "price": 34.99, "category": "accessories", "image": "belt.jpg" },
