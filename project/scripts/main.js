@@ -41,15 +41,7 @@ document.addEventListener('DOMContentLoaded', () =>{
       switch(path) {
         case 'index.html':
         case '':
-            renderProducts('men', 'clothing-container');
-            renderProducts('women', 'clothing-container');
-            renderProducts('accessories', 'shoe-container');
-            renderProducts('men', 'clothing-container');
-            renderProducts('women', 'clothing-container');
-            renderProducts('accessories', 'shoe-container');
-            renderProducts('men', 'clothing-container');
-            renderProducts('women', 'clothing-container');
-            renderProducts('accessories', 'shoe-container');
+            renderProducts();
             break;
         case 'cart.html':
             renderCartItems();
