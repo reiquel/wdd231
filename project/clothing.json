@@ -1,18 +1,25 @@
 {
-    "men": [
-      { "id": 1, "name": "Classic Tee", "price": 24.99, "category": "men", "image": "men-tee.webp" },
-      { "id": 2, "name": "Slim Fit Jeans", "price": 59.99, "category": "men", "image": "men-jeans.webp" },
-      { "id": 3, "name": "Casual Blazer", "price": 89.99, "category": "men", "image": "men-blazer.webp" }
-    ],
-    "women": [
-      { "id": 4, "name": "Floral Dress", "price": 49.99, "category": "women", "image": "women-dress.webp" },
-      { "id": 5, "name": "High-Waist Skirt", "price": 39.99, "category": "women", "image": "women-skirt.webp" },
-      { "id": 6, "name": "Blouse", "price": 29.99, "category": "women", "image": "women-blouse.webp" }
-    ],
-    "accessories": [
-      { "id": 7, "name": "Leather Belt", "price": 34.99, "category": "accessories", "image": "belt.webp" },
-      { "id": 8, "name": "Stylish Watch", "price": 99.99, "category": "accessories", "image": "watch.webp" },
-      { "id": 9, "name": "Sun Glasses", "price": 79.99, "category": "accessories", "image": "glasses.webp" }
-    ]
-  }
+  "men": [
+    { "id": 1, "name": "Classic Tee", "price": 24.99, "category": "men", "image": "men-tee.webp", "description": "Soft cotton t-shirt" },
+    { "id": 2, "name": "Slim Fit Jeans", "price": 59.99, "category": "men", "image": "men-jeans.webp", "description": "Comfortable denim" },
+    { "id": 3, "name": "Casual Blazer", "price": 89.99, "category": "men", "image": "men-blazer.webp", "description": "Versatile jacket" },
+    { "id": 10, "name": "Polo Shirt", "price": 34.99, "category": "men", "image": "men-polo.webp", "description": "Breathable fabric" },
+    { "id": 11, "name": "Chino Pants", "price": 49.99, "category": "men", "image": "men-chinos.webp", "description": "Smart-casual style" }
+  ],
+  "women": [
+    { "id": 4, "name": "Floral Dress", "price": 49.99, "category": "women", "image": "women-dress.webp", "description": "Light summer dress" },
+    { "id": 5, "name": "High-Waist Skirt", "price": 39.99, "category": "women", "image": "women-skirt.webp", "description": "Elegant fit" },
+    { "id": 6, "name": "Blouse", "price": 29.99, "category": "women", "image": "women-blouse.webp", "description": "Flowy top" },
+    { "id": 12, "name": "Denim Jacket", "price": 69.99, "category": "women", "image": "women-jacket.webp", "description": "Trendy outerwear" },
+    { "id": 13, "name": "Knit Sweater", "price": 44.99, "category": "women", "image": "women-sweater.webp", "description": "Cozy and warm" }
+  ],
+  "accessories": [
+    { "id": 7, "name": "Leather Belt", "price": 34.99, "category": "accessories", "image": "belt.webp", "description": "Durable leather" },
+    { "id": 8, "name": "Stylish Watch", "price": 99.99, "category": "accessories", "image": "watch.webp", "description": "Timeless design" },
+    { "id": 9, "name": "Sun Glasses", "price": 79.99, "category": "accessories", "image": "glasses.webp", "description": "UV protection" },
+    { "id": 14, "name": "Canvas Tote Bag", "price": 29.99, "category": "accessories", "image": "tote-bag.webp", "description": "Eco-friendly bag" },
+    { "id": 15, "name": "Wool Scarf", "price": 39.99, "category": "accessories", "image": "scarf.webp", "description": "Soft and warm" },
+    { "id": 16, "name": "Baseball Cap", "price": 19.99, "category": "accessories", "image": "cap.webp", "description": "Casual headwear" }
+  ]
+}
   

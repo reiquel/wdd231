@@ -5,7 +5,7 @@
     --background-color: #F8F4F9;
     --text-color: #333333;
     --card-background: #FFFFFF;
-    --glass-effect:var(--glass-effect)
+    --glass-effect:var(--glass-effect);
     --card-shadow: 0 10px 20px rgba(0,0,0,0.1);
     --transition: all 0.3s ease-in-out;
   }
@@ -189,6 +189,21 @@
     color: #1f1a36;
     font-weight: bold;
     margin: 0.5rem 0;
+  }
+
+  .product-category {
+    font-size: 0.9rem;
+    color: #1f1a36;
+    margin: 0.5rem 0;
+    text-transform: capitalize;
+
+  }
+
+  .product-description {
+    font-size: 0.85rem;
+    color: #1f1a36;
+    margin: 0.5rem 0;
+    line-height: 1.4;
   }
   
   .add-to-cart {
