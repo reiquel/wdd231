@@ -192,6 +192,7 @@
   }
 
   .product-category {
+    font-weight: bold;
     font-size: 0.9rem;
     color: #1f1a36;
     margin: 0.5rem 0;
@@ -200,6 +201,7 @@
   }
 
   .product-description {
+    font-weight: bold;
     font-size: 0.85rem;
     color: #1f1a36;
     margin: 0.5rem 0;

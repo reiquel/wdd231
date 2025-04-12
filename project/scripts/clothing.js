@@ -18,8 +18,8 @@ export async function renderProducts(category) {
                     <div class="product-info">
                          <h3 class="product-title">${product.name}</h3>
                         <p class="product-price">$${product.price.toFixed(2)}</p>
-                        <p class="product-category">$${product.category}</p>
-                        <p class="product-description">$${product.description}</p>
+                        <p class="product-category">${product.category}</p>
+                        <p class="product-description">${product.description}</p>
                         <button class="add-to-cart" data-id="${product.id}">
                             Add to Cart
                         </button>
@@ -41,7 +41,7 @@ export async function renderProducts(category) {
                         }
                 });
             });
-        } catch (error) {
+        }  catch (error) {
             container.innerHTML = `<p>Error loading products. Please try again later.</p>`;
         }
 }
