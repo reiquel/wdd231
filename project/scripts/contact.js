@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const openButtons = document.querySelector('.open-button');
-    const closeButtons = document.querySelector('.close-button');
+    const openButtons = document.querySelectorAll('.open-button');
+    const closeButtons = document.querySelectorAll('.close-button');
 
     openButtons.forEach(button => {
         button.addEventListener("click", () => {
