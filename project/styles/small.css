@@ -271,7 +271,7 @@
   .checkout-btn {
     width: 100%;
     padding: 1rem;
-    background: var(--secondary-color);
+    background: var(--primary-color);
     color: white;
     border: none;
     border-radius: 5px;
