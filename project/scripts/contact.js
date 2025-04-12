@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const openButtons = document.querySelector('.open-button');
     const closeButtons = document.querySelector('.close-button');
 
-    openButton.forEach(button => {
+    openButtons.forEach(button => {
         button.addEventListener("click", () => {
             const modalId = button.getAttribute("data-modal");
             const modal = document.getElementById(modalId);
