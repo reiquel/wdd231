@@ -314,7 +314,9 @@
     background: var(--accent-color);
     transform: translateY(-2px);
   }
-
+ .container-1 h2,  .container-1 p,.container-2 h2,  .container-2 p, .contact-details  {
+  text-align: center;
+ }
   .contact-info {
     background-color: var(--background-color);
     padding: 2rem 0;
