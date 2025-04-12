@@ -5,6 +5,7 @@
     --background-color: #F8F4F9;
     --text-color: #333333;
     --card-background: #FFFFFF;
+    --glass-effect:var(--glass-effect)
     --card-shadow: 0 10px 20px rgba(0,0,0,0.1);
     --transition: all 0.3s ease-in-out;
   }
@@ -140,7 +141,7 @@
   color: black;
 }
 
-#clothing-container, #show-container {
+#clothing-container, #shoe-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 1rem;
@@ -421,9 +422,7 @@
 
 
   .membership-form {
-    background: var(--glass-effect);
-    backdrop-filter: var(--glass-backdrop);
-    border: var(--glass-border);
+    border: var(--secondary-color);
     border-radius: 16px;
     padding: 1.5rem;
     box-shadow: var(--card-shadow);

@@ -57,7 +57,7 @@
         display: none;
       }
 
-    #clothing-container, #show-container {
+    #clothing-container, #shoe-container {
         grid-template-columns: repeat(3, minmax(200px, 1fr));
     }
     .cart-icon {
