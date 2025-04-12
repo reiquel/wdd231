@@ -85,6 +85,23 @@
         width: 300px;
     }
 
+    .contact-info {
+        display: grid;
+        grid-template-columns:repeat(2, 1fr) ;
+        gap: 2rem;
+        padding: 2rem;
+        max-width: 1400px;
+        margin: auto;
+    }
+    .partnership-form {
+        grid-column: 1/2;
+    }
+
+    .partnership-levels {
+        grid-column: 2/3;
+    }
+
+
     .map-container iframe {
         width: 95%;
         height: 80%;
