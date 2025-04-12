@@ -24,7 +24,7 @@ if (partnershipForm) {
     partnershipForm.addEventListener("submit", (e) => {
         e.preventDefault();
         const formData = new FormData(partnershipForm);
-        localStorage.setItem('lastApplication', JSON.stringify(Object.fromEntries(formDataData)));
+        localStorage.setItem('lastApplication', JSON.stringify(Object.fromEntries(formData)));
         const params = new URLSearchParams(formData).toString();
         window.location.href = `form-submission.html?${params}`;
         partnershipForm.reset();
