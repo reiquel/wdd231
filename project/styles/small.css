@@ -402,6 +402,7 @@
   color: var(--primary-color);
   margin: 1.5rem 0 0.2rem 0;
   border-bottom: 1px solid #eee;
+  font-size: x-large;
 }
 
 .membership-form input[type=text],
@@ -508,6 +509,7 @@
   color: var(--primary-color);
   font-family: "Playfair Display", serif;
   margin-bottom: 1rem;
+  font-size: x-large;
 }
 
 .modal {
