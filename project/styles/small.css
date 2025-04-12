@@ -316,21 +316,6 @@
     60% {transform: translateY(-10px);}
   }
   
-  .continue-shopping {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background: var(--secondary-color);
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 1rem;
-    transition: var(--transition);
-  }
-  
-  .continue-shopping:hover {
-    background: var(--accent-color);
-    transform: translateY(-2px);
-  }
  .container-1 h2,  .container-1 p,.container-2 h2,  .container-2 p, .contact-details  {
   text-align: center;
  }
@@ -501,16 +486,6 @@
   margin-top: 1.5rem;
 }
 
-.continue-s {
-  background-color: var(--primary-color);
-  color: white;
-}
-
-.continue-s:hover {
-  background: var(--accent-color);
-  transform: translateY(-2px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
-}
 
 .partnership-levels {
   display: flex;
