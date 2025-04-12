@@ -315,6 +315,50 @@
     transform: translateY(-2px);
   }
 
+  .contact-info {
+    background-color: var(--background-color);
+    padding: 2rem 0;
+    text-align: center;
+
+  }
+.contact-details {
+  margin: 1rem;
+}
+
+.contact-details p {
+  margin: 0.5rem 0;
+}
+
+.contact-details a:hover {
+  color: var(--accent-color);
+}
+
+.partnership-form {
+  padding: 2rem 0;
+}
+
+.partnership-form h2, .map h2 {
+  font-family: 'playfair', serif;
+  font-size: x-large;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.membership-form {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: var(--card-shadow);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.membership-form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 10px rgba(0, 0, 0, 0.15);
+}
+
   footer {
     background: var(--primary-color);
     color: var(--card-background);
@@ -324,6 +368,100 @@
     margin-top: 15px;
     font-size: larger;
     font-weight: 600; 
+}
+
+.membership-form label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--primary-color);
+  padding-top: 0.2rem;
+}
+
+.membership-form h3 {
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+  margin: 1.5rem 0 0.2rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.membership-form input[type=text],
+.membership-form input[type=tel],
+.membership-form input[type=email],
+.membership-form select {
+    display: block;
+    margin: .1rem 0 1rem 0 ;
+    padding: .3rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    border-left-width: 5px;
+    border-left-color:#555;
+    font-size: 1rem;
+    color: #3D405B;
+    width: 250px;
+  }
+
+  .membership-form input:required {border-left-color: #d70000;}
+  .membership-form input:focus {border-left-color: black; outline:none;}
+  .membership-form input:required:valid{border-left-color: green;}
+
+  .membership-form input[type=submit] {
+    border: none;
+    text-align: center;
+    background-color: #3D405B;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+
+  .membership-form {
+    background: var(--glass-effect);
+    backdrop-filter: var(--glass-backdrop);
+    border: var(--glass-border);
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: var(--card-shadow);
+    
+}
+
+.membership-form:hover {
+    transform: translatey(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.membership-form input[type="submit"]:hover {
+  background-color: var(--accent-color);
+}
+
+.map {
+  padding: 2rem 0;
+}
+
+.map-container {
+  position: relative;
+  width:100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.map-container h2 {
+  margin-left: 20px;
+  margin-bottom: 1rem;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  width: 90%;
+  height: 75%;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .social-icons {

@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="styles/large.css">
 
     <script type="module" src="scripts/main.js"></script>
+    <script src="scripts/contact.js" defer></script>
 
     </head>
     <body>
@@ -49,9 +50,55 @@
         </div>
     </header>
         <main>
-            <section id="home">
-                <h1>Welcome to Our Store</h1>
-                <p>Find your perfect pair today!</p>
+            <section id="contact-info">
+                <div class="container">
+                    <h2>Contact Us</h2>
+                    <p>Have questions or want to collaborate? Reach out to us!</p>
+                    <div class="contact-details">
+                        <p><strong>Email:</strong> <a href="mailto:info@R&Mrestyle.com">info@R&Mrestyle.com</a></p>
+                        <p><strong>Phone:</strong> +1 (809) 325-6197</p>
+                        <p><strong>Address:</strong> Av. Egbert Morrison, Santo Domingo, Distrito Nacional, Republica Dominicana</p>
+                    </div>
+                </div>
+            </section>
+            <section class="partnership-form">
+                <div class="container">
+                    <h2>Become a Partner</h2>
+                    <p>Join our network to showcase your products in our store!</p>
+                    <form class="membership-form">
+                        <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+                        <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+                        <label>Business Phone <input type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes" placeholder="809-555-6461"></label>
+                        <label>Email <input type="email" name="email" required placeholder="example@business.com" title="Your Email" autocomplete="email"></label>
+
+                        <h3>Partnership Type</h3>
+                        <label><input type="radio" name="partnership" value="Supplier" checked>Supplier</label>
+                        <label><input type="radio" name="partnership" value="Designer" checked>Designer</label>
+                        <label><input type="radio" name="partnership" value="Distributor" checked>Distributor</label>
+
+                        <h3>Business Information</h3>
+                        <label>Business Name <input type="text" name="business" required title="Your Business Name"></label>
+                        <label>Location</label>
+                        <select name="location" required>
+                            <option value="">Select a Location</option>
+                            <option value="Santo Domingo">Santo Domingo</option>
+                            <option value="Santiago">Santiago</option>
+                            <option value="Puerto Plata">Puerto Plata</option>
+                        </select>
+                        <input type="submit" value="Submit Partnership Request">
+                    </form>
+                </div>
+            </section>
+            <section class="map">
+                <div class="map-container">
+                    <h2>Our Location</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!m12!1m3!1d3783.041742257937!2d-69.903456684733!3d18.48577598740587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1ablem2!1s0x0%3A0x0!2zMTjCsDI5JzA4LjgiTiA2OcKwNTQnMTIuNCJX!5e0!3m2!1sen!2sdo!4v1633020000000!5m2!1sen!2sdo"
+                        title="R&M ReStyle Closet Address"
+                        allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+                </div>
             </section>
         </main>
         <footer>
