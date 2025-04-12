@@ -9,11 +9,11 @@
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://reiquel.github.io/site-plan/">
-    <meta property="og:title" content="Final Project Cart Page" />
+    <meta property="og:title" content="Final Project Confirmation Page" />
     <meta property="og:description" content="Explore my journey in web frontend development with projects, quizzes and more!" />
 
 
-    <title>R&M ReStyle Closet - Cart</title>
+    <title>R&M ReStyle Closet - Order Confirmation</title>
 
 
     <link rel="icon" href="favicon.ico">
@@ -37,8 +37,8 @@
             <nav class="side-navbar" id="sideNavbar">
                 <button id="closeNav" class="close-btn" aria-label="Close menu">×</button>
                 <ul class="nav-list">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="cart.html" class="nav-link active">Cart</a></li>
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="cart.html" class="nav-link">Cart</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
@@ -47,22 +47,24 @@
             </a> 
         </div>
     </header>
-        <main class="main-content cart-page">
-            <section class="cart-container">
-                <h2 class="cart-title">Your Shopping Cart</h2>
-                <div id="cartItems"></div>
-                <div class="cart-summary">
-                    <p class="cart-total">Total: <span id="cartTotal">$0.00</span></p>
-                    <form id="checkoutForm" action="confirmation.html" method="get">
-                        <input type="hidden" id="orderTotalInput" name="total" value="0.00">
-                        <button type="submit" class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
-                    </form>
+        <main class="main-form-contain">
+            <section class="confirmation-container-form">
+                <div class="form-confirmation">
+                  <h2>Application Submitted</h2>
+                  <p>Thank you, <span id="firstName"></span> <span id="lastName"></span>, for your distributor application!</p>
+                    <p><strong>Business:</strong> <span id="businessName"></span></p>
+                    <p><strong>Email:</strong> <span id="email"></span></p>
+                    <p><strong>Phone:</strong> <span id="phone"></span></p>
+                    <p><strong>Location:</strong> <span id="location"></span></p>
+                    <a href="contact.html" class="continue-s">Back to Contact</a>
+                  </div>
+                  <a href="index.html" class="continue-shopping">Continue Shopping</a>
                 </div>
-            </section>
+              </section>
         </main>
         <footer>
             <div class="demographics-info">
-                <p><strong>R&M ReStyle Closet Cart</strong></p>
+                <p><strong>R&M ReStyle Closet Order Confirmation</strong></p>
                 <p>📍Address:R&M ReStyle Closet Av. Egbert Morrison, Santo Domingo, Distrito Nacional,República Dominicana</p>
                 <p>📧 Email:info@R&Mrestyle.com</p>
                 <p>📞 Phone:+1 (809) 325-6197</p>
@@ -87,4 +89,3 @@
         </footer>
     </body>
 </html>
-

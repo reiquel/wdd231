@@ -5,7 +5,6 @@
     --background-color: #F8F4F9;
     --text-color: #333333;
     --card-background: #FFFFFF;
-    --glass-effect:var(--glass-effect);
     --card-shadow: 0 10px 20px rgba(0,0,0,0.1);
     --transition: all 0.3s ease-in-out;
   }
@@ -369,7 +368,7 @@
   background: rgba(255, 255, 255, 0.8);
   border-radius: 16px;
   padding: 1.5rem;
-  box-shadow: var(--card-shadow);
+  box-shadow: 0 12px 10px rgba(0, 0, 0, 0.15);
   max-width: 600px;
   margin: 0 auto;
 }
@@ -439,14 +438,6 @@
   }
 
 
-  .membership-form {
-    border: var(--secondary-color);
-    border-radius: 16px;
-    padding: 1.5rem;
-    box-shadow: var(--card-shadow);
-    
-}
-
 .membership-form:hover {
     transform: translatey(-5px);
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
@@ -454,6 +445,71 @@
 
 .membership-form input[type="submit"]:hover {
   background-color: var(--accent-color);
+}
+
+.main-form-contain {
+  flex: 1;
+  padding: 1rem;
+
+}
+
+.confirmation-container-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  padding: 1rem;
+}
+
+.form-confirmation {
+  background: var(--card-background);
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  max-width: 500px;
+  width: 100%;
+  transition: var(--transition);
+}
+
+.form-confirmation:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.form-confirmation h2 {
+  font-family: "Playfair Display", serif;
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.form-confirmation p {
+  color: var(--text-color);
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.form-confirmation p strong {
+  color: var(--primary-color);
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.continue-s {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.continue-s:hover {
+  background: var(--accent-color);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
 }
 
 .partnership-levels {
